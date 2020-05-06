@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BDD33382462460F0048E424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33372462460F0048E424 /* AppDelegate.swift */; };
+		5BDD333A2462460F0048E424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33392462460F0048E424 /* SceneDelegate.swift */; };
+		5BDD333C2462460F0048E424 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD333B2462460F0048E424 /* ContentView.swift */; };
+		5BDD333E246246130048E424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD333D246246130048E424 /* Assets.xcassets */; };
+		5BDD3341246246130048E424 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD3340246246130048E424 /* Preview Assets.xcassets */; };
+		5BDD3344246246130048E424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD3342246246130048E424 /* LaunchScreen.storyboard */; };
+		5BDD334F246246130048E424 /* Diet_ScienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD334E246246130048E424 /* Diet_ScienceTests.swift */; };
+		5BDD335A246246130048E424 /* Diet_ScienceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD3359246246130048E424 /* Diet_ScienceUITests.swift */; };
+		5BDD335F246246130048E424 /* Diet Science WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5BDD335E246246130048E424 /* Diet Science WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5BDD3365246246130048E424 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD3363246246130048E424 /* Interface.storyboard */; };
+		5BDD3367246246140048E424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD3366246246140048E424 /* Assets.xcassets */; };
+		5BDD336E246246140048E424 /* Diet Science WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5BDD336D246246140048E424 /* Diet Science WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5BDD3373246246140048E424 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD3372246246140048E424 /* ContentView.swift */; };
+		5BDD3375246246140048E424 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD3374246246140048E424 /* HostingController.swift */; };
+		5BDD3377246246140048E424 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD3376246246140048E424 /* ExtensionDelegate.swift */; };
+		5BDD3379246246140048E424 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD3378246246140048E424 /* NotificationController.swift */; };
+		5BDD337B246246140048E424 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD337A246246140048E424 /* NotificationView.swift */; };
+		5BDD337D246246140048E424 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD337C246246140048E424 /* ComplicationController.swift */; };
+		5BDD337F246246150048E424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD337E246246150048E424 /* Assets.xcassets */; };
+		5BDD3382246246150048E424 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD3381246246150048E424 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BDD334B246246130048E424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BDD332C2462460F0048E424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDD33332462460F0048E424;
+			remoteInfo = "Diet Science";
+		};
+		5BDD3356246246130048E424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BDD332C2462460F0048E424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDD33332462460F0048E424;
+			remoteInfo = "Diet Science";
+		};
+		5BDD3360246246130048E424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BDD332C2462460F0048E424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDD335D246246130048E424;
+			remoteInfo = "Diet Science WatchKit App";
+		};
+		5BDD336F246246140048E424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BDD332C2462460F0048E424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDD336C246246140048E424;
+			remoteInfo = "Diet Science WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5BDD338A246246150048E424 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5BDD336E246246140048E424 /* Diet Science WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD338E246246150048E424 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5BDD335F246246130048E424 /* Diet Science WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5BDD33342462460F0048E424 /* Diet Science.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diet Science.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDD33372462460F0048E424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BDD33392462460F0048E424 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5BDD333B2462460F0048E424 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BDD333D246246130048E424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BDD3340246246130048E424 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BDD3343246246130048E424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BDD3345246246130048E424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDD334A246246130048E424 /* Diet ScienceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diet ScienceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDD334E246246130048E424 /* Diet_ScienceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diet_ScienceTests.swift; sourceTree = "<group>"; };
+		5BDD3350246246130048E424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDD3355246246130048E424 /* Diet ScienceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diet ScienceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDD3359246246130048E424 /* Diet_ScienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diet_ScienceUITests.swift; sourceTree = "<group>"; };
+		5BDD335B246246130048E424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDD335E246246130048E424 /* Diet Science WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diet Science WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDD3364246246130048E424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5BDD3366246246140048E424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BDD3368246246140048E424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDD336D246246140048E424 /* Diet Science WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Diet Science WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDD3372246246140048E424 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BDD3374246246140048E424 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		5BDD3376246246140048E424 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5BDD3378246246140048E424 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5BDD337A246246140048E424 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		5BDD337C246246140048E424 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5BDD337E246246150048E424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BDD3381246246150048E424 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BDD3383246246150048E424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDD3384246246150048E424 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BDD33312462460F0048E424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD3347246246130048E424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD3352246246130048E424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD336A246246140048E424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BDD332B2462460F0048E424 = {
+			isa = PBXGroup;
+			children = (
+				5BDD33362462460F0048E424 /* Diet Science */,
+				5BDD334D246246130048E424 /* Diet ScienceTests */,
+				5BDD3358246246130048E424 /* Diet ScienceUITests */,
+				5BDD3362246246130048E424 /* Diet Science WatchKit App */,
+				5BDD3371246246140048E424 /* Diet Science WatchKit Extension */,
+				5BDD33352462460F0048E424 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BDD33352462460F0048E424 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD33342462460F0048E424 /* Diet Science.app */,
+				5BDD334A246246130048E424 /* Diet ScienceTests.xctest */,
+				5BDD3355246246130048E424 /* Diet ScienceUITests.xctest */,
+				5BDD335E246246130048E424 /* Diet Science WatchKit App.app */,
+				5BDD336D246246140048E424 /* Diet Science WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BDD33362462460F0048E424 /* Diet Science */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD33372462460F0048E424 /* AppDelegate.swift */,
+				5BDD33392462460F0048E424 /* SceneDelegate.swift */,
+				5BDD333B2462460F0048E424 /* ContentView.swift */,
+				5BDD333D246246130048E424 /* Assets.xcassets */,
+				5BDD3342246246130048E424 /* LaunchScreen.storyboard */,
+				5BDD3345246246130048E424 /* Info.plist */,
+				5BDD333F246246130048E424 /* Preview Content */,
+			);
+			path = "Diet Science";
+			sourceTree = "<group>";
+		};
+		5BDD333F246246130048E424 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD3340246246130048E424 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BDD334D246246130048E424 /* Diet ScienceTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD334E246246130048E424 /* Diet_ScienceTests.swift */,
+				5BDD3350246246130048E424 /* Info.plist */,
+			);
+			path = "Diet ScienceTests";
+			sourceTree = "<group>";
+		};
+		5BDD3358246246130048E424 /* Diet ScienceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD3359246246130048E424 /* Diet_ScienceUITests.swift */,
+				5BDD335B246246130048E424 /* Info.plist */,
+			);
+			path = "Diet ScienceUITests";
+			sourceTree = "<group>";
+		};
+		5BDD3362246246130048E424 /* Diet Science WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD3363246246130048E424 /* Interface.storyboard */,
+				5BDD3366246246140048E424 /* Assets.xcassets */,
+				5BDD3368246246140048E424 /* Info.plist */,
+			);
+			path = "Diet Science WatchKit App";
+			sourceTree = "<group>";
+		};
+		5BDD3371246246140048E424 /* Diet Science WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD3372246246140048E424 /* ContentView.swift */,
+				5BDD3374246246140048E424 /* HostingController.swift */,
+				5BDD3376246246140048E424 /* ExtensionDelegate.swift */,
+				5BDD3378246246140048E424 /* NotificationController.swift */,
+				5BDD337A246246140048E424 /* NotificationView.swift */,
+				5BDD337C246246140048E424 /* ComplicationController.swift */,
+				5BDD337E246246150048E424 /* Assets.xcassets */,
+				5BDD3383246246150048E424 /* Info.plist */,
+				5BDD3384246246150048E424 /* PushNotificationPayload.apns */,
+				5BDD3380246246150048E424 /* Preview Content */,
+			);
+			path = "Diet Science WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5BDD3380246246150048E424 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD3381246246150048E424 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BDD33332462460F0048E424 /* Diet Science */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDD338F246246150048E424 /* Build configuration list for PBXNativeTarget "Diet Science" */;
+			buildPhases = (
+				5BDD33302462460F0048E424 /* Sources */,
+				5BDD33312462460F0048E424 /* Frameworks */,
+				5BDD33322462460F0048E424 /* Resources */,
+				5BDD338E246246150048E424 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BDD3361246246130048E424 /* PBXTargetDependency */,
+			);
+			name = "Diet Science";
+			productName = "Diet Science";
+			productReference = 5BDD33342462460F0048E424 /* Diet Science.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BDD3349246246130048E424 /* Diet ScienceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDD3392246246150048E424 /* Build configuration list for PBXNativeTarget "Diet ScienceTests" */;
+			buildPhases = (
+				5BDD3346246246130048E424 /* Sources */,
+				5BDD3347246246130048E424 /* Frameworks */,
+				5BDD3348246246130048E424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BDD334C246246130048E424 /* PBXTargetDependency */,
+			);
+			name = "Diet ScienceTests";
+			productName = "Diet ScienceTests";
+			productReference = 5BDD334A246246130048E424 /* Diet ScienceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BDD3354246246130048E424 /* Diet ScienceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDD3395246246150048E424 /* Build configuration list for PBXNativeTarget "Diet ScienceUITests" */;
+			buildPhases = (
+				5BDD3351246246130048E424 /* Sources */,
+				5BDD3352246246130048E424 /* Frameworks */,
+				5BDD3353246246130048E424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BDD3357246246130048E424 /* PBXTargetDependency */,
+			);
+			name = "Diet ScienceUITests";
+			productName = "Diet ScienceUITests";
+			productReference = 5BDD3355246246130048E424 /* Diet ScienceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5BDD335D246246130048E424 /* Diet Science WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDD338B246246150048E424 /* Build configuration list for PBXNativeTarget "Diet Science WatchKit App" */;
+			buildPhases = (
+				5BDD335C246246130048E424 /* Resources */,
+				5BDD338A246246150048E424 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BDD3370246246140048E424 /* PBXTargetDependency */,
+			);
+			name = "Diet Science WatchKit App";
+			productName = "Diet Science WatchKit App";
+			productReference = 5BDD335E246246130048E424 /* Diet Science WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5BDD336C246246140048E424 /* Diet Science WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDD3387246246150048E424 /* Build configuration list for PBXNativeTarget "Diet Science WatchKit Extension" */;
+			buildPhases = (
+				5BDD3369246246140048E424 /* Sources */,
+				5BDD336A246246140048E424 /* Frameworks */,
+				5BDD336B246246140048E424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Diet Science WatchKit Extension";
+			productName = "Diet Science WatchKit Extension";
+			productReference = 5BDD336D246246140048E424 /* Diet Science WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BDD332C2462460F0048E424 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Bryan Chan";
+				TargetAttributes = {
+					5BDD33332462460F0048E424 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					5BDD3349246246130048E424 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 5BDD33332462460F0048E424;
+					};
+					5BDD3354246246130048E424 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 5BDD33332462460F0048E424;
+					};
+					5BDD335D246246130048E424 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					5BDD336C246246140048E424 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5BDD332F2462460F0048E424 /* Build configuration list for PBXProject "Diet Science" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BDD332B2462460F0048E424;
+			productRefGroup = 5BDD33352462460F0048E424 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BDD33332462460F0048E424 /* Diet Science */,
+				5BDD3349246246130048E424 /* Diet ScienceTests */,
+				5BDD3354246246130048E424 /* Diet ScienceUITests */,
+				5BDD335D246246130048E424 /* Diet Science WatchKit App */,
+				5BDD336C246246140048E424 /* Diet Science WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BDD33322462460F0048E424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD3344246246130048E424 /* LaunchScreen.storyboard in Resources */,
+				5BDD3341246246130048E424 /* Preview Assets.xcassets in Resources */,
+				5BDD333E246246130048E424 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD3348246246130048E424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD3353246246130048E424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD335C246246130048E424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD3367246246140048E424 /* Assets.xcassets in Resources */,
+				5BDD3365246246130048E424 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD336B246246140048E424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD3382246246150048E424 /* Preview Assets.xcassets in Resources */,
+				5BDD337F246246150048E424 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BDD33302462460F0048E424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD33382462460F0048E424 /* AppDelegate.swift in Sources */,
+				5BDD333A2462460F0048E424 /* SceneDelegate.swift in Sources */,
+				5BDD333C2462460F0048E424 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD3346246246130048E424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD334F246246130048E424 /* Diet_ScienceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD3351246246130048E424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD335A246246130048E424 /* Diet_ScienceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD3369246246140048E424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD3375246246140048E424 /* HostingController.swift in Sources */,
+				5BDD3373246246140048E424 /* ContentView.swift in Sources */,
+				5BDD3379246246140048E424 /* NotificationController.swift in Sources */,
+				5BDD3377246246140048E424 /* ExtensionDelegate.swift in Sources */,
+				5BDD337B246246140048E424 /* NotificationView.swift in Sources */,
+				5BDD337D246246140048E424 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BDD334C246246130048E424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BDD33332462460F0048E424 /* Diet Science */;
+			targetProxy = 5BDD334B246246130048E424 /* PBXContainerItemProxy */;
+		};
+		5BDD3357246246130048E424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BDD33332462460F0048E424 /* Diet Science */;
+			targetProxy = 5BDD3356246246130048E424 /* PBXContainerItemProxy */;
+		};
+		5BDD3361246246130048E424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BDD335D246246130048E424 /* Diet Science WatchKit App */;
+			targetProxy = 5BDD3360246246130048E424 /* PBXContainerItemProxy */;
+		};
+		5BDD3370246246140048E424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BDD336C246246140048E424 /* Diet Science WatchKit Extension */;
+			targetProxy = 5BDD336F246246140048E424 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BDD3342246246130048E424 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BDD3343246246130048E424 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5BDD3363246246130048E424 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BDD3364246246130048E424 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BDD3385246246150048E424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BDD3386246246150048E424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BDD3388246246150048E424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Diet Science WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Diet Science WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-Science.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		5BDD3389246246150048E424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Diet Science WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Diet Science WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-Science.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		5BDD338C246246150048E424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Diet_Science_WatchKit_Extension;
+				INFOPLIST_FILE = "Diet Science WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-Science.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		5BDD338D246246150048E424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Diet_Science_WatchKit_Extension;
+				INFOPLIST_FILE = "Diet Science WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-Science.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		5BDD3390246246150048E424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Diet Science/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Diet Science/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-Science";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BDD3391246246150048E424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Diet Science/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Diet Science/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-Science";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BDD3393246246150048E424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Diet ScienceTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-ScienceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diet Science.app/Diet Science";
+			};
+			name = Debug;
+		};
+		5BDD3394246246150048E424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Diet ScienceTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-ScienceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diet Science.app/Diet Science";
+			};
+			name = Release;
+		};
+		5BDD3396246246150048E424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Diet ScienceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-ScienceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Diet Science";
+			};
+			name = Debug;
+		};
+		5BDD3397246246150048E424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Diet ScienceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-ScienceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Diet Science";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BDD332F2462460F0048E424 /* Build configuration list for PBXProject "Diet Science" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDD3385246246150048E424 /* Debug */,
+				5BDD3386246246150048E424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDD3387246246150048E424 /* Build configuration list for PBXNativeTarget "Diet Science WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDD3388246246150048E424 /* Debug */,
+				5BDD3389246246150048E424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDD338B246246150048E424 /* Build configuration list for PBXNativeTarget "Diet Science WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDD338C246246150048E424 /* Debug */,
+				5BDD338D246246150048E424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDD338F246246150048E424 /* Build configuration list for PBXNativeTarget "Diet Science" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDD3390246246150048E424 /* Debug */,
+				5BDD3391246246150048E424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDD3392246246150048E424 /* Build configuration list for PBXNativeTarget "Diet ScienceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDD3393246246150048E424 /* Debug */,
+				5BDD3394246246150048E424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDD3395246246150048E424 /* Build configuration list for PBXNativeTarget "Diet ScienceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDD3396246246150048E424 /* Debug */,
+				5BDD3397246246150048E424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BDD332C2462460F0048E424 /* Project object */;
+}
