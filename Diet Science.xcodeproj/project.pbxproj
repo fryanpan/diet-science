@@ -27,6 +27,18 @@
 		5BDD337D246246140048E424 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD337C246246140048E424 /* ComplicationController.swift */; };
 		5BDD337F246246150048E424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD337E246246150048E424 /* Assets.xcassets */; };
 		5BDD3382246246150048E424 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD3381246246150048E424 /* Preview Assets.xcassets */; };
+		5BDD339D24635F5F0048E424 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD339C24635F5F0048E424 /* MapView.swift */; };
+		5BDD33A024636DD90048E424 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD339F24636DD90048E424 /* EventType.swift */; };
+		5BDD33A3246374530048E424 /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33A2246374530048E424 /* Scale.swift */; };
+		5BDD33A824637A4A0048E424 /* LoggingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33A724637A4A0048E424 /* LoggingGroup.swift */; };
+		5BDD33AC2463823B0048E424 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33AB2463823B0048E424 /* Metadata.swift */; };
+		5BDD33AD24638C0B0048E424 /* LoggingGroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33A924637B0D0048E424 /* LoggingGroupRow.swift */; };
+		5BDD33AE24638C210048E424 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD339A24635D6D0048E424 /* CircleImage.swift */; };
+		5BDD33AF24638C9B0048E424 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33AB2463823B0048E424 /* Metadata.swift */; };
+		5BDD33B024638C9B0048E424 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD339F24636DD90048E424 /* EventType.swift */; };
+		5BDD33B124638C9B0048E424 /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33A2246374530048E424 /* Scale.swift */; };
+		5BDD33B224638C9B0048E424 /* LoggingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33A724637A4A0048E424 /* LoggingGroup.swift */; };
+		5BDD33B624638FCD0048E424 /* EventLoggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33B524638FCD0048E424 /* EventLoggingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +127,15 @@
 		5BDD3381246246150048E424 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5BDD3383246246150048E424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BDD3384246246150048E424 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5BDD339A24635D6D0048E424 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		5BDD339C24635F5F0048E424 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5BDD339F24636DD90048E424 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		5BDD33A1246374020048E424 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5BDD33A2246374530048E424 /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
+		5BDD33A724637A4A0048E424 /* LoggingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingGroup.swift; sourceTree = "<group>"; };
+		5BDD33A924637B0D0048E424 /* LoggingGroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingGroupRow.swift; sourceTree = "<group>"; };
+		5BDD33AB2463823B0048E424 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		5BDD33B524638FCD0048E424 /* EventLoggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLoggingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +204,8 @@
 				5BDD3342246246130048E424 /* LaunchScreen.storyboard */,
 				5BDD3345246246130048E424 /* Info.plist */,
 				5BDD333F246246130048E424 /* Preview Content */,
+				5BDD339C24635F5F0048E424 /* MapView.swift */,
+				5BDD33A1246374020048E424 /* README.md */,
 			);
 			path = "Diet Science";
 			sourceTree = "<group>";
@@ -226,9 +249,14 @@
 		5BDD3371246246140048E424 /* Diet Science WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5BDD33A4246379D60048E424 /* Resources */,
+				5BDD339E24636D5F0048E424 /* Models */,
 				5BDD3372246246140048E424 /* ContentView.swift */,
+				5BDD339A24635D6D0048E424 /* CircleImage.swift */,
 				5BDD3374246246140048E424 /* HostingController.swift */,
 				5BDD3376246246140048E424 /* ExtensionDelegate.swift */,
+				5BDD33B524638FCD0048E424 /* EventLoggingView.swift */,
+				5BDD33A924637B0D0048E424 /* LoggingGroupRow.swift */,
 				5BDD3378246246140048E424 /* NotificationController.swift */,
 				5BDD337A246246140048E424 /* NotificationView.swift */,
 				5BDD337C246246140048E424 /* ComplicationController.swift */,
@@ -246,6 +274,24 @@
 				5BDD3381246246150048E424 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BDD339E24636D5F0048E424 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD339F24636DD90048E424 /* EventType.swift */,
+				5BDD33A2246374530048E424 /* Scale.swift */,
+				5BDD33A724637A4A0048E424 /* LoggingGroup.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BDD33A4246379D60048E424 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD33AB2463823B0048E424 /* Metadata.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +488,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDD33382462460F0048E424 /* AppDelegate.swift in Sources */,
+				5BDD33A824637A4A0048E424 /* LoggingGroup.swift in Sources */,
+				5BDD33A024636DD90048E424 /* EventType.swift in Sources */,
+				5BDD339D24635F5F0048E424 /* MapView.swift in Sources */,
+				5BDD33AC2463823B0048E424 /* Metadata.swift in Sources */,
+				5BDD33A3246374530048E424 /* Scale.swift in Sources */,
 				5BDD333A2462460F0048E424 /* SceneDelegate.swift in Sources */,
 				5BDD333C2462460F0048E424 /* ContentView.swift in Sources */,
 			);
@@ -467,8 +518,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDD33AF24638C9B0048E424 /* Metadata.swift in Sources */,
+				5BDD33B024638C9B0048E424 /* EventType.swift in Sources */,
+				5BDD33B124638C9B0048E424 /* Scale.swift in Sources */,
+				5BDD33B624638FCD0048E424 /* EventLoggingView.swift in Sources */,
+				5BDD33B224638C9B0048E424 /* LoggingGroup.swift in Sources */,
 				5BDD3375246246140048E424 /* HostingController.swift in Sources */,
+				5BDD33AE24638C210048E424 /* CircleImage.swift in Sources */,
 				5BDD3373246246140048E424 /* ContentView.swift in Sources */,
+				5BDD33AD24638C0B0048E424 /* LoggingGroupRow.swift in Sources */,
 				5BDD3379246246140048E424 /* NotificationController.swift in Sources */,
 				5BDD3377246246140048E424 /* ExtensionDelegate.swift in Sources */,
 				5BDD337B246246140048E424 /* NotificationView.swift in Sources */,

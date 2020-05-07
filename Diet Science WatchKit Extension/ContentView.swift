@@ -10,7 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        VStack {
+            Text("Log a Thing:")
+                .font(.system(size: 20))
+            
+            ForEach(Metadata.LoggingGroups, id: \.id) { loggingGroup in
+                NavigationLink(destination: EventLoggingView(loggingGroup)) {
+                        LoggingGroupRow(loggingGroup)
+                    }
+                    .navigationBarTitle("A title!")
+                    .accentColor(.yellow)
+            }
+        }
     }
 }
 
