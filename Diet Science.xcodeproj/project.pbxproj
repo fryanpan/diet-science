@@ -38,7 +38,11 @@
 		5BDD33B024638C9B0048E424 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD339F24636DD90048E424 /* EventType.swift */; };
 		5BDD33B124638C9B0048E424 /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33A2246374530048E424 /* Scale.swift */; };
 		5BDD33B224638C9B0048E424 /* LoggingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33A724637A4A0048E424 /* LoggingGroup.swift */; };
-		5BDD33B624638FCD0048E424 /* EventLoggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33B524638FCD0048E424 /* EventLoggingView.swift */; };
+		5BDD33B624638FCD0048E424 /* LogGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33B524638FCD0048E424 /* LogGroupView.swift */; };
+		5BDD33B8246395880048E424 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD339A24635D6D0048E424 /* CircleImage.swift */; };
+		5BDD33BA24639D490048E424 /* OrdinalLogEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33B924639D490048E424 /* OrdinalLogEventView.swift */; };
+		5BDD33BC24648D950048E424 /* EventSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BB24648D950048E424 /* EventSample.swift */; };
+		5BDD33BD2464911A0048E424 /* EventSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BB24648D950048E424 /* EventSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,7 +139,9 @@
 		5BDD33A724637A4A0048E424 /* LoggingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingGroup.swift; sourceTree = "<group>"; };
 		5BDD33A924637B0D0048E424 /* LoggingGroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingGroupRow.swift; sourceTree = "<group>"; };
 		5BDD33AB2463823B0048E424 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
-		5BDD33B524638FCD0048E424 /* EventLoggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLoggingView.swift; sourceTree = "<group>"; };
+		5BDD33B524638FCD0048E424 /* LogGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogGroupView.swift; sourceTree = "<group>"; };
+		5BDD33B924639D490048E424 /* OrdinalLogEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdinalLogEventView.swift; sourceTree = "<group>"; };
+		5BDD33BB24648D950048E424 /* EventSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,9 @@
 		5BDD33362462460F0048E424 /* Diet Science */ = {
 			isa = PBXGroup;
 			children = (
+				5BDD33B7246395690048E424 /* Common Views */,
+				5BDD33A4246379D60048E424 /* Resources */,
+				5BDD339E24636D5F0048E424 /* Models */,
 				5BDD33372462460F0048E424 /* AppDelegate.swift */,
 				5BDD33392462460F0048E424 /* SceneDelegate.swift */,
 				5BDD333B2462460F0048E424 /* ContentView.swift */,
@@ -249,13 +258,11 @@
 		5BDD3371246246140048E424 /* Diet Science WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5BDD33A4246379D60048E424 /* Resources */,
-				5BDD339E24636D5F0048E424 /* Models */,
 				5BDD3372246246140048E424 /* ContentView.swift */,
-				5BDD339A24635D6D0048E424 /* CircleImage.swift */,
 				5BDD3374246246140048E424 /* HostingController.swift */,
 				5BDD3376246246140048E424 /* ExtensionDelegate.swift */,
-				5BDD33B524638FCD0048E424 /* EventLoggingView.swift */,
+				5BDD33B524638FCD0048E424 /* LogGroupView.swift */,
+				5BDD33B924639D490048E424 /* OrdinalLogEventView.swift */,
 				5BDD33A924637B0D0048E424 /* LoggingGroupRow.swift */,
 				5BDD3378246246140048E424 /* NotificationController.swift */,
 				5BDD337A246246140048E424 /* NotificationView.swift */,
@@ -280,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				5BDD339F24636DD90048E424 /* EventType.swift */,
+				5BDD33BB24648D950048E424 /* EventSample.swift */,
 				5BDD33A2246374530048E424 /* Scale.swift */,
 				5BDD33A724637A4A0048E424 /* LoggingGroup.swift */,
 			);
@@ -292,6 +300,14 @@
 				5BDD33AB2463823B0048E424 /* Metadata.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5BDD33B7246395690048E424 /* Common Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD339A24635D6D0048E424 /* CircleImage.swift */,
+			);
+			path = "Common Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,9 +505,11 @@
 			files = (
 				5BDD33382462460F0048E424 /* AppDelegate.swift in Sources */,
 				5BDD33A824637A4A0048E424 /* LoggingGroup.swift in Sources */,
+				5BDD33BC24648D950048E424 /* EventSample.swift in Sources */,
 				5BDD33A024636DD90048E424 /* EventType.swift in Sources */,
 				5BDD339D24635F5F0048E424 /* MapView.swift in Sources */,
 				5BDD33AC2463823B0048E424 /* Metadata.swift in Sources */,
+				5BDD33B8246395880048E424 /* CircleImage.swift in Sources */,
 				5BDD33A3246374530048E424 /* Scale.swift in Sources */,
 				5BDD333A2462460F0048E424 /* SceneDelegate.swift in Sources */,
 				5BDD333C2462460F0048E424 /* ContentView.swift in Sources */,
@@ -518,10 +536,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDD33BA24639D490048E424 /* OrdinalLogEventView.swift in Sources */,
 				5BDD33AF24638C9B0048E424 /* Metadata.swift in Sources */,
+				5BDD33BD2464911A0048E424 /* EventSample.swift in Sources */,
 				5BDD33B024638C9B0048E424 /* EventType.swift in Sources */,
 				5BDD33B124638C9B0048E424 /* Scale.swift in Sources */,
-				5BDD33B624638FCD0048E424 /* EventLoggingView.swift in Sources */,
+				5BDD33B624638FCD0048E424 /* LogGroupView.swift in Sources */,
 				5BDD33B224638C9B0048E424 /* LoggingGroup.swift in Sources */,
 				5BDD3375246246140048E424 /* HostingController.swift in Sources */,
 				5BDD33AE24638C210048E424 /* CircleImage.swift in Sources */,
@@ -699,6 +719,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Diet Science WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NEY29E9XHD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Diet Science WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -712,7 +733,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
 			};
 			name = Debug;
 		};
@@ -722,6 +743,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Diet Science WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NEY29E9XHD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Diet Science WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -735,7 +757,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
 			};
 			name = Release;
 		};
@@ -745,6 +767,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NEY29E9XHD;
 				IBSC_MODULE = Diet_Science_WatchKit_Extension;
 				INFOPLIST_FILE = "Diet Science WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-Science.watchkitapp";
@@ -753,7 +776,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
 			};
 			name = Debug;
 		};
@@ -763,6 +786,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NEY29E9XHD;
 				IBSC_MODULE = Diet_Science_WatchKit_Extension;
 				INFOPLIST_FILE = "Diet Science WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-Science.watchkitapp";
@@ -771,7 +795,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
 			};
 			name = Release;
 		};
@@ -781,6 +805,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Diet Science/Preview Content\"";
+				DEVELOPMENT_TEAM = NEY29E9XHD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Diet Science/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -800,6 +825,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Diet Science/Preview Content\"";
+				DEVELOPMENT_TEAM = NEY29E9XHD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Diet Science/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -819,6 +845,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NEY29E9XHD;
 				INFOPLIST_FILE = "Diet ScienceTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -840,6 +867,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NEY29E9XHD;
 				INFOPLIST_FILE = "Diet ScienceTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -860,6 +888,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NEY29E9XHD;
 				INFOPLIST_FILE = "Diet ScienceUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -879,6 +908,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NEY29E9XHD;
 				INFOPLIST_FILE = "Diet ScienceUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

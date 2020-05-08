@@ -11,15 +11,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack {
-            Text("Log a Thing:")
-                .font(.system(size: 20))
-            
+        VStack(spacing: 20) {
             ForEach(Metadata.LoggingGroups, id: \.id) { loggingGroup in
-                NavigationLink(destination: EventLoggingView(loggingGroup)) {
+                NavigationLink(destination: LogGroupView(loggingGroup)) {
                         LoggingGroupRow(loggingGroup)
                     }
-                    .navigationBarTitle("A title!")
+                    .navigationBarTitle("Log a Thing!")
                     .accentColor(.yellow)
             }
         }

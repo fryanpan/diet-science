@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct EventLoggingView: View {
+struct LogGroupView: View {
     var loggingGroup: LoggingGroup;
     
     init(_ loggingGroup: LoggingGroup) {
@@ -17,11 +17,14 @@ struct EventLoggingView: View {
     
     var body: some View {
         VStack {
-            Text(loggingGroup.name)
-                .font(.system(size: 20))
+            Text("Log \(loggingGroup.name)")
+                .font(.body)
             
             ForEach(loggingGroup.eventTypes, id: \.id) { eventType in
                 Text(eventType.name)
+                    .font(.headline)
+                
+
             }
         }
     }
@@ -29,6 +32,6 @@ struct EventLoggingView: View {
 
 struct EventLoggingView_Previews: PreviewProvider {
     static var previews: some View {
-        EventLoggingView(Metadata.SensationLoggingGroup)
+        LogGroupView(Metadata.SensationLoggingGroup)
     }
 }

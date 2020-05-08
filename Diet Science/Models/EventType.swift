@@ -1,5 +1,5 @@
 //
-//  SensationTypeModel.swift
+//  EventType.swift
 //  Diet Science
 //
 //  Created by Bryan Chan on 5/6/20.

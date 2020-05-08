@@ -10,7 +10,6 @@
  @class LoggingGroup Represents a group of event types to log together and how to log them
  
 */
-
 class LoggingGroup {
     // Unique string idenfitier
     public var id: String;
