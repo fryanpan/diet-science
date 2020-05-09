@@ -20,15 +20,16 @@ enum OrdinalScaleError: Error {
 // e.g. 0-10
 // e.g.
 class OrdinalScale: Scale {
-    var min, max: Int;
+    var min, max, defaultValue: Int;
     private var descriptions: [String]?;
     
     /**
             
      */
-    init(_ min: Int, _ max: Int, _ descriptions: [String]?) throws {
+    init(_ min: Int, _ max: Int, _ descriptions: [String]?, _ defaultValue: Int? = nil) throws {
         self.min = min;
         self.max = max;
+        self.defaultValue = defaultValue ?? min;
         self.descriptions = descriptions;
         
         let expectedCount = max - min + 1;
@@ -102,7 +103,7 @@ class KarolinskaScale: OrdinalScale {
             "Sleepy, easy to stay awake", // 7
             "Sleepy, effort to stay awake", // 8
             "Extremely sleepy, fighting sleep", // 9
-        ]);
+        ], 3);
     }
 }
 

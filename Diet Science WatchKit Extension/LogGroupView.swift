@@ -9,18 +9,25 @@
 import SwiftUI
 
 struct LogGroupView: View {
+    @Binding var rootSelection: String?;
+    
     @State var translation: CGFloat = 0;
     @State var index: Int = 0;
     @State var dataIndex: Int = 0;
     
-    @State var eventData: [String: Int] = [:];
+    @State var eventData: [EventSample] = [];
+    
+    @State var buttonLabel: String = "Save!";
     
     var loggingGroup: LoggingGroup;
     var eventTypes: [EventType];
+    var sampleStore: EventSampleStore;
     
-    init(_ loggingGroup: LoggingGroup) {
+    init(_ loggingGroup: LoggingGroup, sampleStore: EventSampleStore, rootSelection: Binding<String?>) {
+        self._rootSelection = rootSelection;
         self.loggingGroup = loggingGroup;
         self.eventTypes = loggingGroup.eventTypes;
+        self.sampleStore = sampleStore;
     }
     
     var tap: some Gesture {
@@ -31,16 +38,26 @@ struct LogGroupView: View {
                     
                     let eventType = self.eventTypes[self.index];
                     
-                    self.eventData[eventType.id] = self.dataIndex + (eventType.scale as! OrdinalScale).min;
+                    // Append a new event sample to the data array
+                    let scale = (eventType.scale as! OrdinalScale)
+                    let min = scale.min;
+                    self.eventData.append(EventSample(eventType.id, Date(), Date(), Double(self.dataIndex + min)));
                     
                     self.index += 1;
-                    self.dataIndex = 0;
+                    self.dataIndex = scale.defaultValue - scale.min;
                 }
             }
     }
     
     func done() {
-        print("All Done \(self.eventData)")
+        print("About to save \(self.eventData)")
+        sampleStore.saveSamples(self.eventData)
+            .then { _ in
+                print("All Done \(self.eventData)");
+                
+                self.buttonLabel = "Done Saving!!";
+                self.rootSelection = nil;
+            }
     }
     
     var body: some View {
@@ -50,7 +67,7 @@ struct LogGroupView: View {
                     .gesture(self.tap)
             } else {
                 Button(action: self.done) {
-                    Text("Save!")
+                    Text(buttonLabel)
                 }.accentColor(.secondary)
             }
         }
@@ -59,6 +76,6 @@ struct LogGroupView: View {
 
 struct EventLoggingView_Previews: PreviewProvider {
     static var previews: some View {
-        LogGroupView(Metadata.SensationLoggingGroup)
+        LogGroupView(Metadata.SensationLoggingGroup, sampleStore: EventSampleStore(), rootSelection: .constant(nil))
     }
 }

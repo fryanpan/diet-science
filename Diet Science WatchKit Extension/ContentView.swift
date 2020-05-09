@@ -9,11 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    var sampleStore: EventSampleStore;
+
+    @State var selection: String? = nil;
+    
+    init(sampleStore: EventSampleStore) {
+        self.sampleStore = sampleStore;
+    }
+        
     var body: some View {
         
         VStack(spacing: 20) {
             ForEach(Metadata.LoggingGroups, id: \.id) { loggingGroup in
-                NavigationLink(destination: LogGroupView(loggingGroup)) {
+                NavigationLink(destination: LogGroupView(loggingGroup,
+                                                         sampleStore: self.sampleStore, rootSelection: self.$selection),
+                               tag: loggingGroup.id,
+                               selection: self.$selection) {
                         LoggingGroupRow(loggingGroup)
                     }
                     .navigationBarTitle("Log a Thing!")
@@ -25,6 +36,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(sampleStore: EventSampleStore())
     }
 }

@@ -15,7 +15,6 @@ struct OrdinalLogEventView: View {
     var scale: OrdinalScale;
         
     init(index: Binding<Int>, label: String, scale: OrdinalScale) {
-        print("Init! \(scale.min) \(scale.max) \(label)")
         self._index = index;
         self.label = label;
         self.scale = scale;
