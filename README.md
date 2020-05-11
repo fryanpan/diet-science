@@ -1,4 +1,32 @@
-#  Rough Sketch of Interfaces
+# Diet Science App
+
+### P1 - Make logging more convenient and performant
+
+After logging a year of data, current web app + spreadsheet + analysis pipeline are starting to keel over.
+Need to revisit
+
+- Convenient Apple Watch sensation logging on the go (2ish days)
+    - SHOULD take < 30 seconds to log 12 sensations, after some practice
+    - SHOULD handle offline data collection gracefully
+    - SHOULD flexibly handle additional sensations over time
+      (focus on starting to work on pelvic floor symptoms, in addition to histamine symptoms)
+    - SHOULD notify to remind to log
+
+### P2 - Make better food logger and analysis pipeline
+
+- Convenient Apple Watch food logging on the go
+    - SHOULD be orders of magnitude faster (5x) at logging than LifeSum or MyFitnessPal
+      (potential gains in precision / recall, streamlining UX targeting expert user)
+    - SHOULD integrate much more cleanly with analysis
+      (current spreadsheet is a mess)
+      
+- Update analysis pipeline (3-5 days)
+      - SHOULD handle another year of data, in more detail
+      - SHOULD represent time more granularly to allow for better analysis
+      - SHOULD represent foods and ingredients more cleanly as well
+      
+
+##  Rough Sketch of Event Logging Interfaces
 
 ```
 

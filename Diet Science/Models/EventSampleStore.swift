@@ -12,9 +12,8 @@ import Promises
 /**
  @class EventSampleStore An abstract class describing a way to write (and eventually perhaps read) event samples
  */
-
 class EventSampleStore: ObservableObject {
-    func saveSamples(_ eventSamples: [EventSample]) -> Promise<Bool> {
+    func saveSamples(_ eventSamples: [EventSample], _ loggingGroup: LoggingGroup) -> Promise<Bool> {
         // Implement this please!
         return Promise(true);
     }
@@ -41,7 +40,8 @@ extension URLSession {
                     reject(HTTPError.invalidResponse)
                     return
                 }
-                guard response.statusCode <= 200, response.statusCode > 300 else {
+                print("Status Code \(response.statusCode)");
+                guard response.statusCode >= 200 && response.statusCode < 300 else {
                     reject(HTTPError.invalidStatusCode)
                     return
                 }
@@ -60,6 +60,8 @@ extension URLSession {
  */
 class GoogleSpreadsheetSampleStore: EventSampleStore {
     private var baseUrl = "https://script.google.com/macros/s/AKfycbzDc1T5-zU_HzQblGg1vscOdo3-Ik6QHUqjrXMrVOynlGj0PDjt/exec?"
+    
+//    private var baseUrl = "https://postb.in/1589077042215-1724203887861?"
     
     // Map to the legacy values for now
     private var KEY_MAP = [
@@ -86,13 +88,14 @@ class GoogleSpreadsheetSampleStore: EventSampleStore {
     
     // Saves a sample to a Google Spreadsheet
     // @TODO Make this more useful for someone else and remove my private URL...
-    override func saveSamples(_ eventSamples: [EventSample]) -> Promise<Bool> {
+    override func saveSamples(_ eventSamples: [EventSample], _ loggingGroup: LoggingGroup) -> Promise<Bool> {
         var components = URLComponents(string: baseUrl)!
         
         var queryItems: [URLQueryItem] = [];
         for eventSample in eventSamples {
             queryItems.append(URLQueryItem(name: KEY_MAP[eventSample.eventId]!, value: String(eventSample.value!)));
         }
+        queryItems.append(URLQueryItem(name: "category", value: loggingGroup.id));
        
         components.queryItems = queryItems;
         components.percentEncodedQuery = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")

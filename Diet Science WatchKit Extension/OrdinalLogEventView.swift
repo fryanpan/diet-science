@@ -10,12 +10,12 @@ import SwiftUI
 import Foundation
 
 struct OrdinalLogEventView: View {
-    @Binding var index: Int;
+    @Binding var value: Int;
     var label: String;
     var scale: OrdinalScale;
         
-    init(index: Binding<Int>, label: String, scale: OrdinalScale) {
-        self._index = index;
+    init(value: Binding<Int>, label: String, scale: OrdinalScale) {
+        self._value = value;
         self.label = label;
         self.scale = scale;
     }
@@ -26,7 +26,7 @@ struct OrdinalLogEventView: View {
             Text(self.label)
                 .font(.system(size: 20))
             
-            Picker(selection: $index, label: Text("")) {
+            Picker(selection: $value, label: Text("")) {
                 ForEach(self.scale.range, id: \.self) { item in
                     Text("\(item)").tag(item)
                 }
@@ -34,7 +34,7 @@ struct OrdinalLogEventView: View {
             .labelsHidden()
             .frame(height: 80, alignment: .top)
             
-            Text(try! self.scale.getDescription(index))
+            Text(try! self.scale.getDescription(value))
                 .font(.body)
                 .frame(height: 40, alignment: .top)
         }
@@ -43,6 +43,6 @@ struct OrdinalLogEventView: View {
 
 struct LogEventView_Previews: PreviewProvider {
     static var previews: some View {
-        OrdinalLogEventView(index: .constant(0), label: "Title", scale: MankowskiScale())
+        OrdinalLogEventView(value: .constant(0), label: "Title", scale: MankowskiScale())
     }
 }

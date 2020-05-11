@@ -7,7 +7,7 @@
 //
 
 struct Metadata {
-    static let BrainFogEventType = EventType("brain_fog", "Brain Fog",
+    static let BrainFogEventType = EventType("brain_fog", "Brain Fog 🧠",
       try! OrdinalScale(0, 3, [
         "Fully present and thoughtful", // 0
         "Mild lack of focus", // 1
@@ -25,7 +25,7 @@ struct Metadata {
             "Pervasively annoying, hard to focus", // 5
         ]))
 
-    static let DryEyesEventType = EventType("dry_eyes", "Irritated Eyes",
+    static let DryEyesEventType = EventType("dry_eyes", "Irritated Eyes 👀",
         try! OrdinalScale(0, 5, [
             "No irritation", // 0
             "Barely noticeable itch and dryness", // 1
@@ -45,21 +45,24 @@ struct Metadata {
     
     static let FatigueEventType = EventType("fatigue", "Fatigue", KarolinskaScale())
     
-    static let HeadacheEventType = EventType("headache", "Headache", MankowskiScale())
+    static let HeadacheEventType = EventType("headache", "Headache 🤕", MankowskiScale())
 
     static let SoreThroatEventType = EventType("sore_throat", "Sore Throat", MankowskiScale())
 
     static let PainUnderSternumEventType = EventType("pain_under_sternum", "Pain under Sternum", MankowskiScale())
 
-    static let StomachRashEventType = EventType("stomach_rash", "Stomach Rash", MankowskiScale())
+    static let RashEventType = EventType("rash", "Rash", try! OrdinalScale(0, 5, [
+            "No rash", // 0
+            "Small rash (dime-sized)", // 1
+            "Large rash (a few quarters)", // 2
+            "Very large rash (orange-sized)", // 3
+            "Giant rash (dinner plate)", // 4
+            "Pervasive (everywhere)", // 5
+        ]))
 
 
-
-    static let UrinationPainStartEventType = EventType("urination_pain_start", "Pee Pain Start", MankowskiScale());
-    static let UrinationPainDuringEventType = EventType("urination_pain_during", "Pee Pain During", MankowskiScale());
-    static let PoopEventType = EventType("poop", "💩", BristolScale());
-
-    static let SensationLoggingGroup = LoggingGroup("sensations", "Sensations", [
+    /** Continuously changing sensations over time */
+    static let SensationLoggingGroup = LoggingGroup("sensation", "Sensations", [
             BrainFogEventType,
             NasalCongestionEventType,
             DryEyesEventType,
@@ -72,9 +75,14 @@ struct Metadata {
             HeadacheEventType,
             SoreThroatEventType,
             PainUnderSternumEventType,
-            StomachRashEventType
+            RashEventType
         ]);
+    
+    static let UrinationPainStartEventType = EventType("urination_pain_start", "Pee Pain Start", MankowskiScale());
+    static let UrinationPainDuringEventType = EventType("urination_pain_during", "Pee Pain During", MankowskiScale());
+    static let PoopEventType = EventType("poop", "💩", BristolScale());
 
+    /** Point-in-time bathroom events */
     static let BathroomLoggingGroup = LoggingGroup("bathroom", "Bathroom", [
             UrinationPainStartEventType,
             UrinationPainDuringEventType,
@@ -82,8 +90,21 @@ struct Metadata {
         ]);
     
     
+    static let RightKneePainEventType = EventType("knee_pain_right", "Knee Pain (Right)", MankowskiScale());
+    static let LeftPlantarFasciaPainEventType = EventType("plantar_fascia_pain_left", "PF Pain Left", MankowskiScale());
+    static let RightPlantarFasciaPainEventType = EventType("plantar_fascia_pain_right", "PF Pain Right", MankowskiScale());
+
+    /** Continuously changing leg pain related sensations over time */
+    static let LegPainLoggingGroup = LoggingGroup("leg_pain", "Leg Pain", [
+            RightKneePainEventType,
+            LeftPlantarFasciaPainEventType,
+            RightPlantarFasciaPainEventType
+        ]);
+
+    
     static let LoggingGroups = [
         SensationLoggingGroup,
-        BathroomLoggingGroup
+        BathroomLoggingGroup,
+        LegPainLoggingGroup
     ]
 }

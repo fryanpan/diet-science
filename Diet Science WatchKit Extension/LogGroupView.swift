@@ -13,11 +13,12 @@ struct LogGroupView: View {
     
     @State var translation: CGFloat = 0;
     @State var index: Int = 0;
-    @State var dataIndex: Int = 0;
+    @State var dataValue: Int = 0;
     
     @State var eventData: [EventSample] = [];
     
     @State var buttonLabel: String = "Save!";
+    @State var startedSaving: Bool = false;
     
     var loggingGroup: LoggingGroup;
     var eventTypes: [EventType];
@@ -34,36 +35,47 @@ struct LogGroupView: View {
         TapGesture(count: 1)
             .onEnded { _ in
                 if(self.index < self.eventTypes.count) {
-                    // @TODO clean this up...responsibility is all messed up
-                    
-                    let eventType = self.eventTypes[self.index];
-                    
                     // Append a new event sample to the data array
-                    let scale = (eventType.scale as! OrdinalScale)
-                    let min = scale.min;
-                    self.eventData.append(EventSample(eventType.id, Date(), Date(), Double(self.dataIndex + min)));
+                    let eventType = self.eventTypes[self.index];
+                    self.eventData.append(EventSample(eventType.id, Date(), Date(), Double(self.dataValue)));
                     
-                    self.index += 1;
-                    self.dataIndex = scale.defaultValue - scale.min;
+                    // Select the next event type to log
+                    self.selectIndex(self.index + 1)
                 }
             }
     }
     
+    private func selectIndex(_ index: Int) {
+        self.index = index;
+        if(self.index < self.eventTypes.count) {
+            let nextScale = (self.eventTypes[self.index].scale as! OrdinalScale);
+            self.dataValue = nextScale.defaultValue;
+        }
+    }
+    
     func done() {
+        if(self.startedSaving) {
+            print("Already saving...");
+            return;
+        }
+        self.startedSaving = true;
+        
         print("About to save \(self.eventData)")
-        sampleStore.saveSamples(self.eventData)
+        self.buttonLabel = "Working...";
+        sampleStore.saveSamples(self.eventData, self.loggingGroup)
             .then { _ in
                 print("All Done \(self.eventData)");
-                
                 self.buttonLabel = "Done Saving!!";
-                self.rootSelection = nil;
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.rootSelection = nil;
+                }
             }
     }
     
     var body: some View {
         VStack {
             if index < eventTypes.count {
-                OrdinalLogEventView(index: $dataIndex, label: eventTypes[index].name, scale: eventTypes[index].scale as! OrdinalScale)
+                OrdinalLogEventView(value: $dataValue, label: eventTypes[index].name, scale: eventTypes[index].scale as! OrdinalScale)
                     .gesture(self.tap)
             } else {
                 Button(action: self.done) {

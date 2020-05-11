@@ -235,6 +235,7 @@
 		5BDD332B2462460F0048E424 = {
 			isa = PBXGroup;
 			children = (
+				5BDD33A1246374020048E424 /* README.md */,
 				5BDD33C2246618FF0048E424 /* Podfile */,
 				5BDD33362462460F0048E424 /* Diet Science */,
 				5BDD334D246246130048E424 /* Diet ScienceTests */,
@@ -273,7 +274,6 @@
 				5BDD3345246246130048E424 /* Info.plist */,
 				5BDD333F246246130048E424 /* Preview Content */,
 				5BDD339C24635F5F0048E424 /* MapView.swift */,
-				5BDD33A1246374020048E424 /* README.md */,
 			);
 			path = "Diet Science";
 			sourceTree = "<group>";
