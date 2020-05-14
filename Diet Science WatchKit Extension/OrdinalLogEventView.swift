@@ -21,7 +21,7 @@ struct OrdinalLogEventView: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             
             Text(self.label)
                 .font(.system(size: 20))
@@ -32,7 +32,8 @@ struct OrdinalLogEventView: View {
                 }
             }.font(.system(size:20))
             .labelsHidden()
-            .frame(height: 80, alignment: .top)
+                .frame(height: 80, alignment: .top)
+                .padding(.top, -15.0)
             
             Text(try! self.scale.getDescription(value))
                 .font(.body)

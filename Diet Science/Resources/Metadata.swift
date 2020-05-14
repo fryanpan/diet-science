@@ -80,7 +80,7 @@ struct Metadata {
     
     static let UrinationPainStartEventType = EventType("urination_pain_start", "Pee Pain Start", MankowskiScale());
     static let UrinationPainDuringEventType = EventType("urination_pain_during", "Pee Pain During", MankowskiScale());
-    static let PoopEventType = EventType("poop", "💩", BristolScale());
+    static let PoopEventType = EventType("poop", "💩", BristolScale(), optional: true);
 
     /** Point-in-time bathroom events */
     static let BathroomLoggingGroup = LoggingGroup("bathroom", "Bathroom", [
@@ -105,6 +105,6 @@ struct Metadata {
     static let LoggingGroups = [
         SensationLoggingGroup,
         BathroomLoggingGroup,
-        LegPainLoggingGroup
+//        LegPainLoggingGroup
     ]
 }

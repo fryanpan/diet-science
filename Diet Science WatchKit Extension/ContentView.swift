@@ -19,7 +19,7 @@ struct ContentView: View {
         
     var body: some View {
         
-        VStack(spacing: 20) {
+        VStack(spacing: 5) {
             ForEach(Metadata.LoggingGroups, id: \.id) { loggingGroup in
                 NavigationLink(destination: LogGroupView(loggingGroup,
                                                          sampleStore: self.sampleStore, rootSelection: self.$selection),

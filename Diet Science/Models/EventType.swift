@@ -19,11 +19,15 @@ struct EventType {
     // Or if it represents a sampled value of a continuous function over time
     var pointSampled: Bool;
     
-    init(_ id: String, _ name: String, _ scale: Scale, pointSampled: Bool = false) {
+    // Whether the event is optional when logging it
+    var optional: Bool;
+    
+    init(_ id: String, _ name: String, _ scale: Scale, pointSampled: Bool = false, optional: Bool = false) {
         self.id = id;
         self.name = name;
         self.scale = scale;
         self.pointSampled = pointSampled;
+        self.optional = optional;
     }
 }
 

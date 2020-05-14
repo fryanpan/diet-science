@@ -59,11 +59,12 @@ extension URLSession {
     @class
  */
 class GoogleSpreadsheetSampleStore: EventSampleStore {
-    private var baseUrl = "https://script.google.com/macros/s/AKfycbzDc1T5-zU_HzQblGg1vscOdo3-Ik6QHUqjrXMrVOynlGj0PDjt/exec?"
+    private var baseUrl = "https://script.google.com/macros/s/AKfycbzwvj8p4WrTH-lgdWvegHWVaW6_Seg9nZ8A8094Cw/exec?"
     
 //    private var baseUrl = "https://postb.in/1589077042215-1724203887861?"
     
     // Map to the legacy values for now
+    // @TODO fix this stuff
     private var KEY_MAP = [
         "bloating" : "Bloating",
         "sore_throat": "Sore throat",
@@ -72,16 +73,20 @@ class GoogleSpreadsheetSampleStore: EventSampleStore {
         "itchy_scalp": "Itchy scalp",
         "brain_fog": "Brain fog",
         "itch_other": "Itch - other",
-        "stomach_rash": "Stomach rash",
         "fatigue": "Fatigue",
         "dry_eyes": "Dry / irritated eyes",
         "gas": "Gas",
         "nasal_congestion": "Nasal congestion",
         "headache": "Headache",
+        "rash": "Rash",
         
         "urination_pain_start": "Urination Pain at Start",
         "urination_pain_during": "Urination Pain During",
-        "poop": "Poop Type"
+        "poop": "Poop Type",
+        
+        "knee_pain_right": "Knee Pain Right",
+        "plantar_fascia_pain_left": "Plantar Fascia Pain Left",
+        "plantar_fascia_pain_right": "Plantar Fascia Pain Right",
     ]
         
     // Sample code from https://stackoverflow.com/questions/27723912/swift-get-request-with-parameters
@@ -93,7 +98,8 @@ class GoogleSpreadsheetSampleStore: EventSampleStore {
         
         var queryItems: [URLQueryItem] = [];
         for eventSample in eventSamples {
-            queryItems.append(URLQueryItem(name: KEY_MAP[eventSample.eventId]!, value: String(eventSample.value!)));
+            let key = KEY_MAP[eventSample.eventId]!;
+            queryItems.append(URLQueryItem(name: key, value: String(eventSample.value!)));
         }
         queryItems.append(URLQueryItem(name: "category", value: loggingGroup.id));
        
