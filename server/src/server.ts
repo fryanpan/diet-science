@@ -2,6 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
 const { makeExecutableSchema } = require('graphql-tools');
+const logger = require( 'morgan' );
+const cors = require( 'cors' );
+
+const PORT = process.env.PORT || 3000;
 
 // Some fake data
 const books = [
@@ -35,13 +39,26 @@ const schema = makeExecutableSchema({
 // Initialize the app
 const app = express();
 
+// Add a request logger
+app.use( logger( 'dev' ));
+
+// Handle all pre-flight OPTIONS requests by allowing all origins
+app.options( '*', cors());
+
 // The GraphQL endpoint
-app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
+app.use(
+  '/graphql', 
+  bodyParser.json(), 
+  graphqlExpress({ schema })
+);
 
 // GraphiQL, a visual editor for queries
-app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
+app.use(
+  '/graphiql', 
+  graphiqlExpress({ endpointURL: '/graphql' })
+);
 
 // Start the server
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log('Go to http://localhost:3000/graphiql to run queries!');
 });
