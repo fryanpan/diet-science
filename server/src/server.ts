@@ -1,41 +1,26 @@
 import express from 'express';
 import bodyParser from 'body-parser'
 import { graphqlExpress, graphiqlExpress }  from 'apollo-server-express';
+import { gql } from 'apollo-server';
 import compression from 'compression';
 import cors from 'cors';
 import logger from 'morgan';
+import eventSamples from './event_samples'
 
 const { makeExecutableSchema } = require('graphql-tools');
 
 const PORT = process.env.PORT || 3000;
 
-// Some fake data
-const books = [
-  {
-    title: "Harry Potter and the Sorcerer's stone",
-    author: 'J.K. Rowling',
-  },
-  {
-    title: 'Jurassic Park',
-    author: 'Michael Crichton',
-  },
-];
 
 // The GraphQL schema in string form
-const typeDefs = `
-  type Query { books: [Book] }
-  type Book { title: String, author: String }
+const typeDef = gql`
+  type Query
 `;
-
-// The resolvers
-const resolvers = {
-  Query: { books: () => books },
-};
 
 // Put together a schema
 const schema = makeExecutableSchema({
-  typeDefs,
-  resolvers,
+  typeDefs: [typeDef, eventSamples.typeDef],
+  resolvers: [eventSamples.resolvers],
 });
 
 // Initialize the app
