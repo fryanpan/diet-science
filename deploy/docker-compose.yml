@@ -1,0 +1,32 @@
+version: '3.2'
+services:
+  db:
+    image: 'postgres:12'
+    restart: always
+    ports:
+      - '15432:5432'
+    environment:
+      POSTGRES_DB: diet_science
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    volumes:
+      - 'db_data:/var/lib/postgresql/data'
+
+  server:
+    build: ../server
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://user:pass@db:5432/diet_science
+      NODE_ENV: development
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    command: npm run dev
+    volumes:
+      - ../server/:/app/
+      - /app/node_modules
+
+volumes:
+  db_data:
+    driver: local

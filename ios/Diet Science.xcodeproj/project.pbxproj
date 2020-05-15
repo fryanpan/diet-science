@@ -44,7 +44,6 @@
 		5BDD33BC24648D950048E424 /* EventSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BB24648D950048E424 /* EventSample.swift */; };
 		5BDD33BD2464911A0048E424 /* EventSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BB24648D950048E424 /* EventSample.swift */; };
 		5BDD33BF246604C00048E424 /* EventSampleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BE246604BF0048E424 /* EventSampleStore.swift */; };
-		5BDD33C3246618FF0048E424 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD33C2246618FF0048E424 /* Podfile */; };
 		5BDD33C42466209E0048E424 /* EventSampleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BE246604BF0048E424 /* EventSampleStore.swift */; };
 		5BDD33C5246620A10048E424 /* EventSampleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BE246604BF0048E424 /* EventSampleStore.swift */; };
 		5BDD33C6246620A10048E424 /* EventSampleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BE246604BF0048E424 /* EventSampleStore.swift */; };
@@ -150,7 +149,6 @@
 		5BDD33B924639D490048E424 /* OrdinalLogEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdinalLogEventView.swift; sourceTree = "<group>"; };
 		5BDD33BB24648D950048E424 /* EventSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSample.swift; sourceTree = "<group>"; };
 		5BDD33BE246604BF0048E424 /* EventSampleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSampleStore.swift; sourceTree = "<group>"; };
-		5BDD33C2246618FF0048E424 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,26 +192,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D5EA6FA02694200E2F4539B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		5BDD332B2462460F0048E424 = {
 			isa = PBXGroup;
 			children = (
 				5BDD33A1246374020048E424 /* README.md */,
-				5BDD33C2246618FF0048E424 /* Podfile */,
 				5BDD33362462460F0048E424 /* Diet Science */,
 				5BDD334D246246130048E424 /* Diet ScienceTests */,
 				5BDD3358246246130048E424 /* Diet ScienceUITests */,
 				5BDD3362246246130048E424 /* Diet Science WatchKit App */,
 				5BDD3371246246140048E424 /* Diet Science WatchKit Extension */,
 				5BDD33352462460F0048E424 /* Products */,
-				2D5EA6FA02694200E2F4539B /* Pods */,
-				5BEC6CA8246DCF6500B57BEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -337,13 +325,6 @@
 				5BDD339A24635D6D0048E424 /* CircleImage.swift */,
 			);
 			path = "Common Views";
-			sourceTree = "<group>";
-		};
-		5BEC6CA8246DCF6500B57BEB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,7 +485,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BDD33C3246618FF0048E424 /* Podfile in Resources */,
 				5BDD3344246246130048E424 /* LaunchScreen.storyboard in Resources */,
 				5BDD3341246246130048E424 /* Preview Assets.xcassets in Resources */,
 				5BDD333E246246130048E424 /* Assets.xcassets in Resources */,
