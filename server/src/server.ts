@@ -6,21 +6,25 @@ import compression from 'compression';
 import cors from 'cors';
 import logger from 'morgan';
 import eventSamples from './event_samples'
+import dateResolver = require('./services/graphql_date'); 
+
+import sequelize = require('./services/db');
+console.log('Initialized Sequelize', sequelize);
 
 const { makeExecutableSchema } = require('graphql-tools');
 
 const PORT = process.env.PORT || 3000;
 
-
 // The GraphQL schema in string form
 const typeDef = gql`
   type Query
+  type Mutation
 `;
 
 // Put together a schema
 const schema = makeExecutableSchema({
   typeDefs: [typeDef, eventSamples.typeDef],
-  resolvers: [eventSamples.resolvers],
+  resolvers: [eventSamples.resolvers, dateResolver],
 });
 
 // Initialize the app
