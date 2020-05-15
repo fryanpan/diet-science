@@ -6,5 +6,8 @@
 		{
 			"path": "/Users/bryanchan/dev/leap"
 		}
-	]
+	],
+	"settings": {
+		"debug.node.autoAttach": "on"
+	}
 }

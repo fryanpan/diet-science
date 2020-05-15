@@ -1,9 +1,11 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
+import express from 'express';
+import bodyParser from 'body-parser'
+import { graphqlExpress, graphiqlExpress }  from 'apollo-server-express';
+import compression from 'compression';
+import cors from 'cors';
+import logger from 'morgan';
+
 const { makeExecutableSchema } = require('graphql-tools');
-const logger = require( 'morgan' );
-const cors = require( 'cors' );
 
 const PORT = process.env.PORT || 3000;
 
@@ -44,6 +46,12 @@ app.use( logger( 'dev' ));
 
 // Handle all pre-flight OPTIONS requests by allowing all origins
 app.options( '*', cors());
+
+app.use(compression());
+
+app.get("/", (req, res) => {
+  res.send("Hello World");
+})
 
 // The GraphQL endpoint
 app.use(
