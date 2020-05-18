@@ -5,3 +5,5 @@ ios/Diet Science.xcworkspace/xcuserdata/bryanchan.xcuserdatad/UserInterfaceState
 ios/Diet Science.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
 ios/Diet Science.xcodeproj/xcuserdata/bryanchan.xcuserdatad/xcdebugger/
 ios/Diet Science.xcworkspace/xcshareddata/swiftpm/
+server/dist/*
+server/.serverless

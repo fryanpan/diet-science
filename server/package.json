@@ -6,6 +6,7 @@
   "dependencies": {
     "apollo-server": "^2.13.1",
     "apollo-server-express": "^1.4.0",
+    "apollo-server-lambda": "^2.13.1",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
@@ -51,7 +52,10 @@
     "test": "nyc mocha -r ts-node/register 'src/**/*.test.ts'",
     "watch": "mocha --watch -r ts-node/register --reporter=nyan 'src/**/*.test.ts'",
     "start": "node --inspect=5858 -r ts-node/register ./src/server.ts",
+    "start_dist": "node dist/server.js",
     "sequelize-cli": "node_modules/.bin/sequelize",
+    "deploy:dev": "npm run build && serverless deploy --stage development",
+    "deploy:prod": "npm run build && serverless deploy --stage prod",
     "dev": "nodemon",
     "build": "tsc"
   },
