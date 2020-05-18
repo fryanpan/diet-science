@@ -3,7 +3,9 @@
 import schema  = require('./services/graphql_init');
 const { ApolloServer, gql } = require('apollo-server-lambda');
 
-console.log(`Here's my schema: ${{ schema }}`);
+// Make sure database connection is setup
+import sequelize = require('./services/db');
+console.log('Initialized Sequelize', sequelize.Sequelize);
 
 const server = new ApolloServer({ 
   schema,
@@ -17,7 +19,7 @@ const server = new ApolloServer({
     });
   },
   playground: {
-    endpoint: "/development/graphql"
+    endpoint: "/dev/graphql"
   }
 });
 

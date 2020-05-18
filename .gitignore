@@ -7,3 +7,5 @@ ios/Diet Science.xcodeproj/xcuserdata/bryanchan.xcuserdatad/xcdebugger/
 ios/Diet Science.xcworkspace/xcshareddata/swiftpm/
 server/dist/*
 server/.serverless
+server/src/config/sequelize-config.js
+

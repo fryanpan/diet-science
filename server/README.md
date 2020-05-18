@@ -5,6 +5,11 @@ Rudimentary server for storing data from the client into a convenient SQL databa
 At the moment, there's no plan to put substantial logic in here.  Will do analysis either in the client 
 or in apps like Jupyter Notebook or Tableau or Google Spreadsheet that are easier to rapidly do analytics in. 
 
+# Deployment
+
+TBD.
+
+At minumum, get database credentials from someone else and fill in './src/config/sequelize-config.js'
 
 # Some development notes
 

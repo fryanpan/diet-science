@@ -54,7 +54,7 @@
     "start": "node --inspect=5858 -r ts-node/register ./src/server.ts",
     "start_dist": "node dist/server.js",
     "sequelize-cli": "node_modules/.bin/sequelize",
-    "deploy:dev": "npm run build && serverless deploy --stage development",
+    "deploy:dev": "npm run build && serverless deploy --stage dev",
     "deploy:prod": "npm run build && serverless deploy --stage prod",
     "dev": "nodemon",
     "build": "tsc"

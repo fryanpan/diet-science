@@ -1,9 +1,12 @@
 import path from 'path';
 import { Sequelize } from 'sequelize-typescript';
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'local';
 const Config = require('../config/sequelize-config')[env]
 
-const modelPath = path.join(__dirname, '..', '**', 'model.ts');
+console.log(`Environment: ${JSON.stringify(process.env)}`);
+
+const fileExtension = env == 'local' ? '.ts' : '.js';
+const modelPath = path.join(__dirname, '..', '**', 'model' + fileExtension);
 console.log(`Looking for models ${modelPath}`);
 
 // Option 1: Passing parameters separately

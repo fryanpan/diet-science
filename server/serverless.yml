@@ -1,14 +1,19 @@
 # serverless.yml
+org: fryanpan
+app: diet-science
 
 service: diet-science
 provider:
   name: aws
   runtime: nodejs12.x
+  region: us-west-1
+  environment:
+    NODE_ENV: ${param:NODE_ENV}
 
 functions:
   graphql:
     # this is formatted as <FILENAME>.<HANDLER>
-    handler: dist/graphql.graphqlHandler
+    handler: dist/graphql.graphqlHandler    
     events:
     - http:
         path: graphql

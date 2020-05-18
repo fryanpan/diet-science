@@ -7,7 +7,7 @@ import logger from 'morgan';
 import schema  = require('./services/graphql_init');
 
 import sequelize = require('./services/db');
-console.log('Initialized Sequelize', sequelize);
+console.log('Initialized Sequelize', sequelize.Sequelize);
 
 const PORT = process.env.PORT || 3000;
 

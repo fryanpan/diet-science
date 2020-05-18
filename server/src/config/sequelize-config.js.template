@@ -1,0 +1,26 @@
+module.exports = {
+  "local": {
+    "username": "user",
+    "password": "pass",
+    "database": "diet_science",
+    "host": "db",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "dev": {
+    "username": "<user>",
+    "password": "<pass>",
+    "database": "<database>",
+    "host": "<host>",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "prod": {
+    "username": "<user>>",
+    "password": "<pass>",
+    "database": "<database>",
+    "host": "<host>",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+};
