@@ -94,6 +94,8 @@ class GoogleSpreadsheetSampleStore: EventSampleStore {
     // Saves a sample to a Google Spreadsheet
     // @TODO Make this more useful for someone else and remove my private URL...
     override func saveSamples(_ eventSamples: [EventSample], _ loggingGroup: LoggingGroup) -> Promise<Bool> {
+        print("Saving to Google Spreadsheet");
+        
         var components = URLComponents(string: baseUrl)!
         
         var queryItems: [URLQueryItem] = [];
@@ -121,3 +123,23 @@ class GoogleSpreadsheetSampleStore: EventSampleStore {
             }
     }
 }
+
+class MultiSampleStore: EventSampleStore {
+    private var sampleStores: [EventSampleStore];
+    
+    init(_ sampleStores: [EventSampleStore]) {
+        self.sampleStores = sampleStores
+    }
+    
+    override func saveSamples(_ eventSamples: [EventSample], _ loggingGroup: LoggingGroup) -> Promise<Bool> {
+        return all(self.sampleStores.map { store in
+                return store.saveSamples(eventSamples, loggingGroup);
+            })
+            .then { results in
+                print("Results \(results)");
+                
+                return Promise(true);
+            }
+    }
+}
+

@@ -1,6 +1,7 @@
 import { Table, Column, Model } from 'sequelize-typescript';
 import { DataTypes } from 'sequelize';
 import { samples } from './data';
+import { EventSampleInput } from './typeDef';
 
 // Note use of definite assignment assertion for each property
 // As suggested by this page:
@@ -24,19 +25,16 @@ export default class EventSample extends Model<EventSample> {
 
 export class EventSampleDAO {
   static async all() {
+    console.log("Fetching all events");
     return EventSample.findAll({ raw: true })
   }
 
-  static async create(data: any) {
+  static async create(data: [EventSampleInput]) {
     console.log(`Creating event sample ${JSON.stringify(data)}`);
-    return EventSample.create(data)
-      .then(result => {
-        console.log(result);
-        return result;
-      })
+    return EventSample.bulkCreate(data);
   }
 
-  static async update(id: number, data: any) {
+  static async update(id: number, data: EventSampleInput) {
     console.log(`Updating event sample ${JSON.stringify(data)} for id: ${id}`);
 
     return EventSample.findByPk(id)

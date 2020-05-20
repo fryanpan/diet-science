@@ -35,7 +35,7 @@ struct OrdinalLogEventView: View {
                 .frame(height: 80, alignment: .top)
                 .padding(.top, -15.0)
             
-            Text(try! self.scale.getDescription(value))
+            Text(try! self.scale.getDescription(value - scale.min))
                 .font(.body)
                 .frame(height: 40, alignment: .top)
         }

@@ -1,10 +1,10 @@
 import express from 'express';
 import bodyParser from 'body-parser'
-import { graphqlExpress, graphiqlExpress }  from 'apollo-server-express';
 import compression from 'compression';
 import cors from 'cors';
 import logger from 'morgan';
 import schema  = require('./services/graphql_init');
+import { ApolloServer } from 'apollo-server-express';
 
 import sequelize = require('./services/db');
 console.log('Initialized Sequelize', sequelize.Sequelize);
@@ -23,23 +23,14 @@ app.options( '*', cors());
 app.use(compression());
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Hello World!");
 })
 
-// The GraphQL endpoint
-app.use(
-  '/graphql', 
-  bodyParser.json(), 
-  graphqlExpress({ schema })
-);
-
-// GraphiQL, a visual editor for queries
-app.use(
-  '/graphiql', 
-  graphiqlExpress({ endpointURL: '/graphql' })
-);
+// Setup GraphQL endpoint
+const server = new ApolloServer({ schema });
+server.applyMiddleware({ app });
 
 // Start the server
 app.listen(PORT, () => {
-  console.log('Go to http://localhost:3000/graphiql to run queries!');
+  console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`)
 });

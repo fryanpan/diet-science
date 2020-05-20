@@ -13,8 +13,11 @@ import SwiftUI
 class HostingController:
     WKHostingController<ContentView> {
 
-    var sampleStore: EventSampleStore = GoogleSpreadsheetSampleStore()
-
+    var sampleStore: EventSampleStore = MultiSampleStore([
+//        GoogleSpreadsheetSampleStore(),
+        GraphQLEventSampleStore()
+    ])
+    
     override var body: ContentView {
         return ContentView(sampleStore: sampleStore)
     }

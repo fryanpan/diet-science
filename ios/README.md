@@ -1,5 +1,14 @@
 # Diet Science App
 
+### Deployment Configurations
+
+Based on this: https://medium.com/slalom-build/ios-managing-multiple-environments-with-a-single-target-94cf823a6447
+
+There are two environment setup.  
+
+For debug, use the "dev" environment
+For release, use the "prod" environment and a different icon and bundle identifier
+
 ### P1 - Make logging more convenient and performant
 
 After logging a year of data, current web app + spreadsheet + analysis pipeline are starting to keel over.

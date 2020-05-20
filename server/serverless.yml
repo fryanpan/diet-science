@@ -9,6 +9,7 @@ provider:
   region: us-west-1
   environment:
     NODE_ENV: ${param:NODE_ENV}
+  timeout: 30
 
 functions:
   graphql:
@@ -23,3 +24,10 @@ functions:
         path: graphql
         method: get
         cors: true
+
+plugins:
+    - serverless-offline
+
+custom:
+    serverless-offline:
+        httpPort: 4000

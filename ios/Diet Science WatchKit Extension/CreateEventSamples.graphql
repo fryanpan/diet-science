@@ -1,0 +1,5 @@
+mutation CreateEventSamples($events:[EventSampleInput]) {
+  createEventSamples(input:$events) {
+    id
+  }
+}

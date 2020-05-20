@@ -1,4 +1,5 @@
 import { EventSampleDAO } from './model'
+import { EventSampleInput } from './typeDef'
 
 export const resolvers = {
   Query: {
@@ -6,7 +7,7 @@ export const resolvers = {
   },
 
   Mutation: {
-    createEventSample: (obj: any, args: any) => EventSampleDAO.create(args.input),
-    updateEventSample: (obj: any, args: any) => EventSampleDAO.update(args.id, args.input)
+    createEventSamples: (obj: any, args: any) => EventSampleDAO.create(args.input as [EventSampleInput]),
+    updateEventSample: (obj: any, args: any) => EventSampleDAO.update(args.id, args.input as EventSampleInput)
   }
 };

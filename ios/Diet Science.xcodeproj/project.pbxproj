@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BCD2389247343180008EBE8 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5BCD2388247343180008EBE8 /* Apollo */; };
+		5BCD238C247343270008EBE8 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5BCD238B247343270008EBE8 /* Apollo */; };
+		5BCD23922473554A0008EBE8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD23912473554A0008EBE8 /* Network.swift */; };
+		5BCD2394247358240008EBE8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD2393247358240008EBE8 /* API.swift */; };
+		5BCD23962475BBEB0008EBE8 /* DateScalarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD23952475BBEB0008EBE8 /* DateScalarType.swift */; };
+		5BCD239C2475DAD90008EBE8 /* GraphQLEventSampleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD239A2475CEC30008EBE8 /* GraphQLEventSampleStore.swift */; };
 		5BDD33382462460F0048E424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33372462460F0048E424 /* AppDelegate.swift */; };
 		5BDD333A2462460F0048E424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33392462460F0048E424 /* SceneDelegate.swift */; };
 		5BDD333C2462460F0048E424 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD333B2462460F0048E424 /* ContentView.swift */; };
@@ -108,6 +114,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5BCD238E24734E610008EBE8 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		5BCD238F247353F00008EBE8 /* EventSampleList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = EventSampleList.graphql; sourceTree = "<group>"; };
+		5BCD23912473554A0008EBE8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5BCD2393247358240008EBE8 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5BCD23952475BBEB0008EBE8 /* DateScalarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScalarType.swift; sourceTree = "<group>"; };
+		5BCD23982475CDDC0008EBE8 /* CreateEventSamples.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CreateEventSamples.graphql; sourceTree = "<group>"; };
+		5BCD239A2475CEC30008EBE8 /* GraphQLEventSampleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLEventSampleStore.swift; sourceTree = "<group>"; };
 		5BDD33342462460F0048E424 /* Diet Science.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diet Science.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDD33372462460F0048E424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BDD33392462460F0048E424 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BEC6CA7246DCECB00B57BEB /* Promises in Frameworks */,
+				5BCD2389247343180008EBE8 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BEC6CAA246DCF6500B57BEB /* Promises in Frameworks */,
+				5BCD238C247343270008EBE8 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +207,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BCD238A247343270008EBE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5BDD332B2462460F0048E424 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +224,7 @@
 				5BDD3362246246130048E424 /* Diet Science WatchKit App */,
 				5BDD3371246246140048E424 /* Diet Science WatchKit Extension */,
 				5BDD33352462460F0048E424 /* Products */,
+				5BCD238A247343270008EBE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -274,6 +297,7 @@
 		5BDD3371246246140048E424 /* Diet Science WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5BCD238E24734E610008EBE8 /* schema.json */,
 				5BDD3372246246140048E424 /* ContentView.swift */,
 				5BDD3374246246140048E424 /* HostingController.swift */,
 				5BDD3376246246140048E424 /* ExtensionDelegate.swift */,
@@ -287,6 +311,12 @@
 				5BDD3383246246150048E424 /* Info.plist */,
 				5BDD3384246246150048E424 /* PushNotificationPayload.apns */,
 				5BDD3380246246150048E424 /* Preview Content */,
+				5BCD238F247353F00008EBE8 /* EventSampleList.graphql */,
+				5BCD23912473554A0008EBE8 /* Network.swift */,
+				5BCD2393247358240008EBE8 /* API.swift */,
+				5BCD23952475BBEB0008EBE8 /* DateScalarType.swift */,
+				5BCD23982475CDDC0008EBE8 /* CreateEventSamples.graphql */,
+				5BCD239A2475CEC30008EBE8 /* GraphQLEventSampleStore.swift */,
 			);
 			path = "Diet Science WatchKit Extension";
 			sourceTree = "<group>";
@@ -347,6 +377,7 @@
 			name = "Diet Science";
 			packageProductDependencies = (
 				5BEC6CA6246DCECB00B57BEB /* Promises */,
+				5BCD2388247343180008EBE8 /* Apollo */,
 			);
 			productName = "Diet Science";
 			productReference = 5BDD33342462460F0048E424 /* Diet Science.app */;
@@ -410,6 +441,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDD3387246246150048E424 /* Build configuration list for PBXNativeTarget "Diet Science WatchKit Extension" */;
 			buildPhases = (
+				5BCD238D247343760008EBE8 /* Generate Apollo GraphQL API */,
 				5BDD3369246246140048E424 /* Sources */,
 				5BDD336A246246140048E424 /* Frameworks */,
 				5BDD336B246246140048E424 /* Resources */,
@@ -421,6 +453,7 @@
 			name = "Diet Science WatchKit Extension";
 			packageProductDependencies = (
 				5BEC6CA9246DCF6500B57BEB /* Promises */,
+				5BCD238B247343270008EBE8 /* Apollo */,
 			);
 			productName = "Diet Science WatchKit Extension";
 			productReference = 5BDD336D246246140048E424 /* Diet Science WatchKit Extension.appex */;
@@ -466,6 +499,7 @@
 			mainGroup = 5BDD332B2462460F0048E424;
 			packageReferences = (
 				5BEC6CA5246DCECB00B57BEB /* XCRemoteSwiftPackageReference "promises" */,
+				5BCD2387247343180008EBE8 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = 5BDD33352462460F0048E424 /* Products */;
 			projectDirPath = "";
@@ -525,6 +559,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5BCD238D247343760008EBE8 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\ndate > current_date\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift --passthroughCustomScalars\n\n# Added in passing through custom scalars to handle Date types\n# As recommended here:\n# https://github.com/apollographql/apollo-ios/issues/262\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BDD33302462460F0048E424 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -576,11 +631,15 @@
 				5BDD33B224638C9B0048E424 /* LoggingGroup.swift in Sources */,
 				5BDD3375246246140048E424 /* HostingController.swift in Sources */,
 				5BDD33AE24638C210048E424 /* CircleImage.swift in Sources */,
+				5BCD23922473554A0008EBE8 /* Network.swift in Sources */,
 				5BDD3373246246140048E424 /* ContentView.swift in Sources */,
+				5BCD23962475BBEB0008EBE8 /* DateScalarType.swift in Sources */,
 				5BDD33AD24638C0B0048E424 /* LoggingGroupRow.swift in Sources */,
 				5BDD3379246246140048E424 /* NotificationController.swift in Sources */,
 				5BDD3377246246140048E424 /* ExtensionDelegate.swift in Sources */,
+				5BCD239C2475DAD90008EBE8 /* GraphQLEventSampleStore.swift in Sources */,
 				5BDD337B246246140048E424 /* NotificationView.swift in Sources */,
+				5BCD2394247358240008EBE8 /* API.swift in Sources */,
 				5BDD337D246246140048E424 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,6 +694,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "http://localhost:4000/dev/graphql";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -696,6 +756,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "https://rt55nfrgcd.execute-api.us-west-1.amazonaws.com/prod/graphql";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -820,12 +881,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NEY29E9XHD;
+				DEVELOPMENT_TEAM = "";
 				IBSC_MODULE = Diet_Science_WatchKit_Extension;
 				INFOPLIST_FILE = "Diet Science WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fryanpan.Diet-Science.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1020,6 +1083,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5BCD2387247343180008EBE8 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.27.1;
+			};
+		};
 		5BEC6CA5246DCECB00B57BEB /* XCRemoteSwiftPackageReference "promises" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/promises.git";
@@ -1031,6 +1102,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5BCD2388247343180008EBE8 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BCD2387247343180008EBE8 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		5BCD238B247343270008EBE8 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BCD2387247343180008EBE8 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
 		5BEC6CA6246DCECB00B57BEB /* Promises */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5BEC6CA5246DCECB00B57BEB /* XCRemoteSwiftPackageReference "promises" */;

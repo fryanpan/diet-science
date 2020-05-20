@@ -1,21 +1,28 @@
 import { gql } from 'apollo-server';
 
+/** Typescript definition */
+export interface EventSampleInput {
+  eventId: string,
+  startDate: number,
+  endDate: number,
+  value: number
+}
 
 export const typeDef = gql`
-  scalar Date
+  scalar DateScalarType
 
   input EventSampleInput {
     eventId: String
-    startDate: Date
-    endDate: Date
+    startDate: DateScalarType
+    endDate: DateScalarType
     value: Float
   }
 
   type EventSample {
     id: ID
     eventId: String
-    startDate: Date
-    endDate: Date
+    startDate: DateScalarType
+    endDate: DateScalarType
     value: Float
   }
   extend type Query {
@@ -23,7 +30,7 @@ export const typeDef = gql`
   }
 
   extend type Mutation {
-    createEventSample(input: EventSampleInput): EventSample!
+    createEventSamples(input: [EventSampleInput]): [EventSample]!
     updateEventSample(id: ID, input: EventSampleInput): EventSample!
   }
 `;

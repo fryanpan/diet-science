@@ -15,6 +15,16 @@ struct ContentView: View {
     
     init(sampleStore: EventSampleStore) {
         self.sampleStore = sampleStore;
+        
+        Network.shared.apollo.fetch(query: EventSampleListQuery()) { result in
+          switch result {
+          case .success(let graphQLResult):
+            print("Success! Result: \(graphQLResult)")
+            print("Event Samples: \(graphQLResult.data?.eventSamples)")
+          case .failure(let error):
+            print("Failure! Error: \(error)")
+          }
+        }
     }
         
     var body: some View {
