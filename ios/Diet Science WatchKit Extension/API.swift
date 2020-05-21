@@ -12,43 +12,63 @@ public struct EventSampleInput: GraphQLMapConvertible {
   ///   - startDate
   ///   - endDate
   ///   - value
-  public init(eventId: Swift.Optional<String?> = nil, startDate: Swift.Optional<DateScalarType?> = nil, endDate: Swift.Optional<DateScalarType?> = nil, value: Swift.Optional<Double?> = nil) {
-    graphQLMap = ["eventId": eventId, "startDate": startDate, "endDate": endDate, "value": value]
+  ///   - category
+  ///   - source
+  public init(eventId: String, startDate: DateScalarType, endDate: DateScalarType, value: Double, category: Swift.Optional<String?> = nil, source: Swift.Optional<String?> = nil) {
+    graphQLMap = ["eventId": eventId, "startDate": startDate, "endDate": endDate, "value": value, "category": category, "source": source]
   }
 
-  public var eventId: Swift.Optional<String?> {
+  public var eventId: String {
     get {
-      return graphQLMap["eventId"] as? Swift.Optional<String?> ?? Swift.Optional<String?>.none
+      return graphQLMap["eventId"] as! String
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "eventId")
     }
   }
 
-  public var startDate: Swift.Optional<DateScalarType?> {
+  public var startDate: DateScalarType {
     get {
-      return graphQLMap["startDate"] as? Swift.Optional<DateScalarType?> ?? Swift.Optional<DateScalarType?>.none
+      return graphQLMap["startDate"] as! DateScalarType
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "startDate")
     }
   }
 
-  public var endDate: Swift.Optional<DateScalarType?> {
+  public var endDate: DateScalarType {
     get {
-      return graphQLMap["endDate"] as? Swift.Optional<DateScalarType?> ?? Swift.Optional<DateScalarType?>.none
+      return graphQLMap["endDate"] as! DateScalarType
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "endDate")
     }
   }
 
-  public var value: Swift.Optional<Double?> {
+  public var value: Double {
     get {
-      return graphQLMap["value"] as? Swift.Optional<Double?> ?? Swift.Optional<Double?>.none
+      return graphQLMap["value"] as! Double
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "value")
+    }
+  }
+
+  public var category: Swift.Optional<String?> {
+    get {
+      return graphQLMap["category"] as? Swift.Optional<String?> ?? Swift.Optional<String?>.none
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "category")
+    }
+  }
+
+  public var source: Swift.Optional<String?> {
+    get {
+      return graphQLMap["source"] as? Swift.Optional<String?> ?? Swift.Optional<String?>.none
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "source")
     }
   }
 }
@@ -108,7 +128,7 @@ public final class CreateEventSamplesMutation: GraphQLMutation {
 
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-        GraphQLField("id", type: .scalar(GraphQLID.self)),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
       ]
 
       public private(set) var resultMap: ResultMap
@@ -117,7 +137,7 @@ public final class CreateEventSamplesMutation: GraphQLMutation {
         self.resultMap = unsafeResultMap
       }
 
-      public init(id: GraphQLID? = nil) {
+      public init(id: GraphQLID) {
         self.init(unsafeResultMap: ["__typename": "EventSample", "id": id])
       }
 
@@ -130,9 +150,9 @@ public final class CreateEventSamplesMutation: GraphQLMutation {
         }
       }
 
-      public var id: GraphQLID? {
+      public var id: GraphQLID {
         get {
-          return resultMap["id"] as? GraphQLID
+          return resultMap["id"]! as! GraphQLID
         }
         set {
           resultMap.updateValue(newValue, forKey: "id")
@@ -193,10 +213,10 @@ public final class EventSampleListQuery: GraphQLQuery {
 
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-        GraphQLField("eventId", type: .scalar(String.self)),
-        GraphQLField("startDate", type: .scalar(DateScalarType.self)),
-        GraphQLField("endDate", type: .scalar(DateScalarType.self)),
-        GraphQLField("value", type: .scalar(Double.self)),
+        GraphQLField("eventId", type: .nonNull(.scalar(String.self))),
+        GraphQLField("startDate", type: .nonNull(.scalar(DateScalarType.self))),
+        GraphQLField("endDate", type: .nonNull(.scalar(DateScalarType.self))),
+        GraphQLField("value", type: .nonNull(.scalar(Double.self))),
       ]
 
       public private(set) var resultMap: ResultMap
@@ -205,7 +225,7 @@ public final class EventSampleListQuery: GraphQLQuery {
         self.resultMap = unsafeResultMap
       }
 
-      public init(eventId: String? = nil, startDate: DateScalarType? = nil, endDate: DateScalarType? = nil, value: Double? = nil) {
+      public init(eventId: String, startDate: DateScalarType, endDate: DateScalarType, value: Double) {
         self.init(unsafeResultMap: ["__typename": "EventSample", "eventId": eventId, "startDate": startDate, "endDate": endDate, "value": value])
       }
 
@@ -218,36 +238,36 @@ public final class EventSampleListQuery: GraphQLQuery {
         }
       }
 
-      public var eventId: String? {
+      public var eventId: String {
         get {
-          return resultMap["eventId"] as? String
+          return resultMap["eventId"]! as! String
         }
         set {
           resultMap.updateValue(newValue, forKey: "eventId")
         }
       }
 
-      public var startDate: DateScalarType? {
+      public var startDate: DateScalarType {
         get {
-          return resultMap["startDate"] as? DateScalarType
+          return resultMap["startDate"]! as! DateScalarType
         }
         set {
           resultMap.updateValue(newValue, forKey: "startDate")
         }
       }
 
-      public var endDate: DateScalarType? {
+      public var endDate: DateScalarType {
         get {
-          return resultMap["endDate"] as? DateScalarType
+          return resultMap["endDate"]! as! DateScalarType
         }
         set {
           resultMap.updateValue(newValue, forKey: "endDate")
         }
       }
 
-      public var value: Double? {
+      public var value: Double {
         get {
-          return resultMap["value"] as? Double
+          return resultMap["value"]! as! Double
         }
         set {
           resultMap.updateValue(newValue, forKey: "value")

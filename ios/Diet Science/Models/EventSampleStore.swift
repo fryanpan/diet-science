@@ -59,6 +59,7 @@ extension URLSession {
     @class
  */
 class GoogleSpreadsheetSampleStore: EventSampleStore {
+    static let sourceId = "WatchOS App: GSS";
     private var baseUrl = Bundle.main.object(forInfoDictionaryKey: "Spreadsheet URL") as! String
     
 //    private var baseUrl = "https://postb.in/1589077042215-1724203887861?"
@@ -104,7 +105,8 @@ class GoogleSpreadsheetSampleStore: EventSampleStore {
             queryItems.append(URLQueryItem(name: key, value: String(eventSample.value!)));
         }
         queryItems.append(URLQueryItem(name: "category", value: loggingGroup.id));
-       
+        queryItems.append(URLQueryItem(name: "source", value: GoogleSpreadsheetSampleStore.sourceId));
+
         components.queryItems = queryItems;
         components.percentEncodedQuery = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
         print("Calling URL: \(components.url!)");

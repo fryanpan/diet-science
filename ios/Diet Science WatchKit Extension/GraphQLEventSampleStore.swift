@@ -13,6 +13,8 @@ import Promises
     @class
  */
 class GraphQLEventSampleStore: EventSampleStore {
+    static let sourceId = "WatchOS App";
+    
     // Saves a sample to a Google Spreadsheet
     // @TODO Make this more useful for someone else and remove my private URL...
     override func saveSamples(_ eventSamples: [EventSample], _ loggingGroup: LoggingGroup) -> Promise<Bool> {
@@ -22,8 +24,9 @@ class GraphQLEventSampleStore: EventSampleStore {
             return EventSampleInput(eventId: eventSample.eventId,
                                         startDate: eventSample.startDate,
                                         endDate: eventSample.endDate,
-                                        value: eventSample.value);
-
+                                        value: eventSample.value!,
+                                        category: loggingGroup.id,
+                                        source: GraphQLEventSampleStore.sourceId);
         };
         
         return Promise<Bool> { fulfill, reject in
