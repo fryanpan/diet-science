@@ -15,6 +15,8 @@ module.exports = {
       startDate: Sequelize.DATE,
       endDate: Sequelize.DATE,
       value: Sequelize.DOUBLE,
+      category: Sequelize.STRING,
+      source: Sequelize.STRING,
 
       // default createdAt, updatedAt fields
       createdAt: {

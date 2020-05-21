@@ -1,4 +1,4 @@
-import { Table, Column, Model } from 'sequelize-typescript';
+import { Table, Column, Model, AllowNull } from 'sequelize-typescript';
 import { DataTypes } from 'sequelize';
 import { samples } from './data';
 import { EventSampleInput } from './typeDef';
@@ -10,17 +10,27 @@ import { EventSampleInput } from './typeDef';
 @Table
 export default class EventSample extends Model<EventSample> {
  
+  @AllowNull(false)
   @Column
   eventId!: string;
- 
+
+  @AllowNull(false)
   @Column
   startDate!: Date;
 
+  @AllowNull(false)
   @Column
   endDate!: Date;
 
+  @AllowNull(false)
   @Column({ type: DataTypes.DOUBLE })
   value!: number;
+
+  @Column
+  category!: string;
+
+  @Column
+  source!: string;
 }
 
 export class EventSampleDAO {
