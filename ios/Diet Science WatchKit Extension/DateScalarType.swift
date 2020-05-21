@@ -15,8 +15,6 @@ import Apollo
 public typealias DateScalarType = Date
 
 extension DateScalarType: JSONDecodable, JSONEncodable {
-    
-    
     public init(jsonValue value: JSONValue) throws {
         guard let timeInterval = value as? TimeInterval else {
             throw JSONDecodingError.couldNotConvert(value: value, to: String.self)
