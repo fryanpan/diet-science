@@ -830,6 +830,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SPREADSHEET_URL = "https://script.google.com/macros/s/AKfycbyVSCMp5ix4QyWrqz2gVtqtKLtwzo10lnk7Ta3l7OMR0KMBmX0/exec?";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.2;
@@ -855,6 +856,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SPREADSHEET_URL = "https://script.google.com/macros/s/AKfycbzgrA63c-fOhK_DoN-YnYfW21wENfgUjmmXeweHGepm7eHNR9To/exec?";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.2;

@@ -59,7 +59,7 @@ extension URLSession {
     @class
  */
 class GoogleSpreadsheetSampleStore: EventSampleStore {
-    private var baseUrl = "https://script.google.com/macros/s/AKfycbzwvj8p4WrTH-lgdWvegHWVaW6_Seg9nZ8A8094Cw/exec?"
+    private var baseUrl = Bundle.main.object(forInfoDictionaryKey: "Spreadsheet URL") as! String
     
 //    private var baseUrl = "https://postb.in/1589077042215-1724203887861?"
     

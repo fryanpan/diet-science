@@ -14,7 +14,7 @@ class HostingController:
     WKHostingController<ContentView> {
 
     var sampleStore: EventSampleStore = MultiSampleStore([
-//        GoogleSpreadsheetSampleStore(),
+        GoogleSpreadsheetSampleStore(),
         GraphQLEventSampleStore()
     ])
     
