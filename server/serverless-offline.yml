@@ -1,0 +1,24 @@
+# serverless-offline.yml
+#
+# This is split off to support running locally in docker
+# Without needing to login.
+#
+# This avoids setting an org and using any parameters from the Serverless Dashboard
+app: diet-science
+
+service: diet-science
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-west-1
+  timeout: 30
+
+functions:
+  ${file(./serverless-functions.yml)}
+
+plugins:
+    - serverless-offline
+
+custom:
+    serverless-offline:
+        httpPort: 3000

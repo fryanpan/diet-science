@@ -12,22 +12,4 @@ provider:
   timeout: 30
 
 functions:
-  graphql:
-    # this is formatted as <FILENAME>.<HANDLER>
-    handler: dist/graphql.graphqlHandler    
-    events:
-    - http:
-        path: graphql
-        method: post
-        cors: true
-    - http:
-        path: graphql
-        method: get
-        cors: true
-
-plugins:
-    - serverless-offline
-
-custom:
-    serverless-offline:
-        httpPort: 4000
+  ${file(./serverless-functions.yml)}

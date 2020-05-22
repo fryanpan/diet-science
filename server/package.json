@@ -19,6 +19,8 @@
     "pg": "^8.2.0",
     "pg-hstore": "^2.3.3",
     "reflect-metadata": "^0.1.13",
+    "serverless": "^1.71.3",
+    "serverless-offline": "^6.1.7",
     "sequelize": "^5.21.9",
     "sequelize-cli": "^5.5.1",
     "sequelize-typescript": "^1.1.0"
@@ -43,9 +45,7 @@
     "graphql-import": "^1.0.2",
     "graphql-import-node": "0.0.4",
     "mocha": "^7.1.2",
-    "nodemon": "^2.0.4",
     "nyc": "^15.0.1",
-    "serverless-offline": "^6.1.7",
     "ts-node": "^8.10.1",
     "tslint": "^6.1.2",
     "typescript": "^3.9.2"
@@ -56,28 +56,11 @@
     "start": "node --inspect=5858 -r ts-node/register ./src/server.ts",
     "start_dist": "node dist/server.js",
     "sequelize-cli": "npm run build && node_modules/.bin/sequelize",
-
     "deploy:dev": "npm run build && serverless deploy --stage dev",
     "deploy:prod": "npm run build && serverless deploy --stage prod",
-    "sls_offline": "npm run build && sls offline",
-
     "update_schema": "node_modules/apollo/bin/run service:download --endpoint=http://localhost:4000/dev/graphql  '../ios/Diet Science Watchkit Extension/schema.json'",
-    "dev": "nodemon",
-    "build": "tsc"
-  },
-  "nodemonConfig": {
-    "ignore": [
-      "**/*.test.ts",
-      "**/*.spec.ts",
-      ".git",
-      "node_modules",
-      "dist"
-    ],
-    "watch": [
-      "src"
-    ],
-    "exec": "npm start",
-    "ext": "ts"
+     "dev": "./dev-hot-reload.sh",
+     "build": "tsc"
   },
   "author": "",
   "license": "ISC"

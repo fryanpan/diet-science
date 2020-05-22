@@ -45,7 +45,7 @@ export class EventSampleDAO {
   }
 
   static async update(id: number, data: EventSampleInput) {
-    console.log(`Updating event sample ${JSON.stringify(data)} for id: ${id}`);
+    console.log(`Updating! event sample ${JSON.stringify(data)} for id: ${id}`);
 
     return EventSample.findByPk(id)
       .then(async eventSample => {
