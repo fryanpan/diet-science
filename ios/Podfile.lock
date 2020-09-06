@@ -1,0 +1,38 @@
+PODS:
+  - Apollo (0.27.1):
+    - Apollo/Core (= 0.27.1)
+  - Apollo/Core (0.27.1)
+  - Auth0 (1.25.0):
+    - JWTDecode
+    - SimpleKeychain
+  - JWTDecode (2.4.1)
+  - PromisesObjC (1.2.8)
+  - PromisesSwift (1.2.8):
+    - PromisesObjC (= 1.2.8)
+  - SimpleKeychain (0.11.1)
+
+DEPENDENCIES:
+  - Apollo
+  - Auth0 (~> 1.0)
+  - PromisesSwift
+
+SPEC REPOS:
+  trunk:
+    - Apollo
+    - Auth0
+    - JWTDecode
+    - PromisesObjC
+    - PromisesSwift
+    - SimpleKeychain
+
+SPEC CHECKSUMS:
+  Apollo: e5c057c155bf28bcfbf928e0d69e3ce643f1a1c6
+  Auth0: 358dbd972851942cf4a5e5ce8cd14bcd3ad969fa
+  JWTDecode: 4bd4da0cdf0f8154fd467fa48499f34ec057fb88
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  PromisesSwift: 37bad6f4daddb02f7c9c531efe91e8b21c13ee2f
+  SimpleKeychain: 0c657949c7afff92337d2ff64052d5eb5c53823e
+
+PODFILE CHECKSUM: 3a91974dc08149af84844c7b8a0b1311ccda6c49
+
+COCOAPODS: 1.9.1

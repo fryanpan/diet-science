@@ -59,7 +59,8 @@ struct Metadata {
             "Giant rash (dinner plate)", // 4
             "Pervasive (everywhere)", // 5
         ]))
-
+    
+    static let EarCongestionEventType = EventType("ear_congestion", "Ear Congestion", MankowskiScale());
 
     /** Continuously changing sensations over time */
     static let SensationLoggingGroup = LoggingGroup("sensation", "Sensations", [
@@ -75,7 +76,8 @@ struct Metadata {
             HeadacheEventType,
             SoreThroatEventType,
             PainUnderSternumEventType,
-            RashEventType
+            RashEventType,
+            EarCongestionEventType
         ]);
     
     static let UrinationPainStartEventType = EventType("urination_pain_start", "Pee Pain Start", MankowskiScale());

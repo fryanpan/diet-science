@@ -8,7 +8,11 @@ graphql:
       path: graphql
       method: post
       cors: true
+      authorizer: authorizerFunc
   - http:
       path: graphql
       method: get
       cors: true
+      authorizer: authorizerFunc
+authorizerFunc:
+    handler: dist/services/authorizer.authorizerFunc

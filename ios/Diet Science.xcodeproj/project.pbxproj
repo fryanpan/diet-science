@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BCD2389247343180008EBE8 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5BCD2388247343180008EBE8 /* Apollo */; };
-		5BCD238C247343270008EBE8 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5BCD238B247343270008EBE8 /* Apollo */; };
+		25F21C7D8FB5704AD3248A93 /* Pods_Diet_Science_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765708B4244854A1AB9E74A5 /* Pods_Diet_Science_WatchKit_App.framework */; };
+		5BA6FBFD247881E800BAAD82 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BA6FBFC247881E800BAAD82 /* Auth0.plist */; };
 		5BCD23922473554A0008EBE8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD23912473554A0008EBE8 /* Network.swift */; };
 		5BCD2394247358240008EBE8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD2393247358240008EBE8 /* API.swift */; };
 		5BCD23962475BBEB0008EBE8 /* DateScalarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD23952475BBEB0008EBE8 /* DateScalarType.swift */; };
@@ -53,8 +53,10 @@
 		5BDD33C42466209E0048E424 /* EventSampleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BE246604BF0048E424 /* EventSampleStore.swift */; };
 		5BDD33C5246620A10048E424 /* EventSampleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BE246604BF0048E424 /* EventSampleStore.swift */; };
 		5BDD33C6246620A10048E424 /* EventSampleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD33BE246604BF0048E424 /* EventSampleStore.swift */; };
-		5BEC6CA7246DCECB00B57BEB /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 5BEC6CA6246DCECB00B57BEB /* Promises */; };
-		5BEC6CAA246DCF6500B57BEB /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 5BEC6CA9246DCF6500B57BEB /* Promises */; };
+		7B10D03B153B06C88711B143 /* Pods_Diet_Science.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03390A80095B2D40ECCE473 /* Pods_Diet_Science.framework */; };
+		7D302082D7696054CBCBFD40 /* Pods_Diet_Science_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B5AB7EA40AD14F5A74BFB4F /* Pods_Diet_Science_WatchKit_Extension.framework */; };
+		BD3FC7B779FBEB361BE04D8E /* Pods_Diet_Science_Diet_ScienceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21952D621D8E4777418BD866 /* Pods_Diet_Science_Diet_ScienceUITests.framework */; };
+		C1109FD18D5BF31FF58FFB1D /* Pods_Diet_ScienceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1547A204BF5613FA9FA1BBB3 /* Pods_Diet_ScienceTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		091D1421AD26051FA0A1CA49 /* Pods-Diet Science-Diet ScienceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diet Science-Diet ScienceUITests.release.xcconfig"; path = "Target Support Files/Pods-Diet Science-Diet ScienceUITests/Pods-Diet Science-Diet ScienceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1547A204BF5613FA9FA1BBB3 /* Pods_Diet_ScienceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diet_ScienceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21952D621D8E4777418BD866 /* Pods_Diet_Science_Diet_ScienceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diet_Science_Diet_ScienceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F1236EC3319D2BD649B4BC /* Pods-Diet Science WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diet Science WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Diet Science WatchKit Extension/Pods-Diet Science WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		291AAE7EB070BE1A07CF0E5C /* Pods-Diet Science WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diet Science WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Diet Science WatchKit App/Pods-Diet Science WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		5BA6FBFC247881E800BAAD82 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		5BCD238E24734E610008EBE8 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		5BCD238F247353F00008EBE8 /* EventSampleList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = EventSampleList.graphql; sourceTree = "<group>"; };
 		5BCD23912473554A0008EBE8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -162,6 +170,16 @@
 		5BDD33B924639D490048E424 /* OrdinalLogEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdinalLogEventView.swift; sourceTree = "<group>"; };
 		5BDD33BB24648D950048E424 /* EventSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSample.swift; sourceTree = "<group>"; };
 		5BDD33BE246604BF0048E424 /* EventSampleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSampleStore.swift; sourceTree = "<group>"; };
+		6B5AB7EA40AD14F5A74BFB4F /* Pods_Diet_Science_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diet_Science_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		765708B4244854A1AB9E74A5 /* Pods_Diet_Science_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diet_Science_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83360FA1027F363BD215CE66 /* Pods-Diet Science WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diet Science WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Diet Science WatchKit Extension/Pods-Diet Science WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		83A7102538C75DEEBCE4A805 /* Pods-Diet Science-Diet ScienceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diet Science-Diet ScienceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Diet Science-Diet ScienceUITests/Pods-Diet Science-Diet ScienceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABBA6189569201285A0B5452 /* Pods-Diet Science WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diet Science WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Diet Science WatchKit App/Pods-Diet Science WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		D0C0096AFCDDE1BBB5E56F78 /* Pods-Diet Science.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diet Science.release.xcconfig"; path = "Target Support Files/Pods-Diet Science/Pods-Diet Science.release.xcconfig"; sourceTree = "<group>"; };
+		DE89325D71D99083C3BA4B70 /* Pods-Diet ScienceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diet ScienceTests.debug.xcconfig"; path = "Target Support Files/Pods-Diet ScienceTests/Pods-Diet ScienceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF6598CEE4975579A3F440F2 /* Pods-Diet Science.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diet Science.debug.xcconfig"; path = "Target Support Files/Pods-Diet Science/Pods-Diet Science.debug.xcconfig"; sourceTree = "<group>"; };
+		F03390A80095B2D40ECCE473 /* Pods_Diet_Science.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diet_Science.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8E9F1F6FE8A0122A43634E /* Pods-Diet ScienceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diet ScienceTests.release.xcconfig"; path = "Target Support Files/Pods-Diet ScienceTests/Pods-Diet ScienceTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BEC6CA7246DCECB00B57BEB /* Promises in Frameworks */,
-				5BCD2389247343180008EBE8 /* Apollo in Frameworks */,
+				7B10D03B153B06C88711B143 /* Pods_Diet_Science.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1109FD18D5BF31FF58FFB1D /* Pods_Diet_ScienceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD3FC7B779FBEB361BE04D8E /* Pods_Diet_Science_Diet_ScienceUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,8 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BEC6CAA246DCF6500B57BEB /* Promises in Frameworks */,
-				5BCD238C247343270008EBE8 /* Apollo in Frameworks */,
+				7D302082D7696054CBCBFD40 /* Pods_Diet_Science_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,15 +219,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F21C7D8FB5704AD3248A93 /* Pods_Diet_Science_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2949BD1C69FC5E6FD99FE2AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF6598CEE4975579A3F440F2 /* Pods-Diet Science.debug.xcconfig */,
+				D0C0096AFCDDE1BBB5E56F78 /* Pods-Diet Science.release.xcconfig */,
+				291AAE7EB070BE1A07CF0E5C /* Pods-Diet Science WatchKit App.debug.xcconfig */,
+				ABBA6189569201285A0B5452 /* Pods-Diet Science WatchKit App.release.xcconfig */,
+				22F1236EC3319D2BD649B4BC /* Pods-Diet Science WatchKit Extension.debug.xcconfig */,
+				83360FA1027F363BD215CE66 /* Pods-Diet Science WatchKit Extension.release.xcconfig */,
+				83A7102538C75DEEBCE4A805 /* Pods-Diet Science-Diet ScienceUITests.debug.xcconfig */,
+				091D1421AD26051FA0A1CA49 /* Pods-Diet Science-Diet ScienceUITests.release.xcconfig */,
+				DE89325D71D99083C3BA4B70 /* Pods-Diet ScienceTests.debug.xcconfig */,
+				FE8E9F1F6FE8A0122A43634E /* Pods-Diet ScienceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5BCD238A247343270008EBE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F03390A80095B2D40ECCE473 /* Pods_Diet_Science.framework */,
+				765708B4244854A1AB9E74A5 /* Pods_Diet_Science_WatchKit_App.framework */,
+				6B5AB7EA40AD14F5A74BFB4F /* Pods_Diet_Science_WatchKit_Extension.framework */,
+				21952D621D8E4777418BD866 /* Pods_Diet_Science_Diet_ScienceUITests.framework */,
+				1547A204BF5613FA9FA1BBB3 /* Pods_Diet_ScienceTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,6 +266,7 @@
 				5BDD3371246246140048E424 /* Diet Science WatchKit Extension */,
 				5BDD33352462460F0048E424 /* Products */,
 				5BCD238A247343270008EBE8 /* Frameworks */,
+				2949BD1C69FC5E6FD99FE2AA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -317,6 +359,7 @@
 				5BCD23952475BBEB0008EBE8 /* DateScalarType.swift */,
 				5BCD23982475CDDC0008EBE8 /* CreateEventSamples.graphql */,
 				5BCD239A2475CEC30008EBE8 /* GraphQLEventSampleStore.swift */,
+				5BA6FBFC247881E800BAAD82 /* Auth0.plist */,
 			);
 			path = "Diet Science WatchKit Extension";
 			sourceTree = "<group>";
@@ -364,10 +407,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDD338F246246150048E424 /* Build configuration list for PBXNativeTarget "Diet Science" */;
 			buildPhases = (
+				4B5C5316BF6AD786D533BB82 /* [CP] Check Pods Manifest.lock */,
 				5BDD33302462460F0048E424 /* Sources */,
 				5BDD33312462460F0048E424 /* Frameworks */,
 				5BDD33322462460F0048E424 /* Resources */,
 				5BDD338E246246150048E424 /* Embed Watch Content */,
+				AE634BE6191C266269300847 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,8 +421,6 @@
 			);
 			name = "Diet Science";
 			packageProductDependencies = (
-				5BEC6CA6246DCECB00B57BEB /* Promises */,
-				5BCD2388247343180008EBE8 /* Apollo */,
 			);
 			productName = "Diet Science";
 			productReference = 5BDD33342462460F0048E424 /* Diet Science.app */;
@@ -387,6 +430,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDD3392246246150048E424 /* Build configuration list for PBXNativeTarget "Diet ScienceTests" */;
 			buildPhases = (
+				EF420FC2C9C76C0F1A715ED7 /* [CP] Check Pods Manifest.lock */,
 				5BDD3346246246130048E424 /* Sources */,
 				5BDD3347246246130048E424 /* Frameworks */,
 				5BDD3348246246130048E424 /* Resources */,
@@ -405,9 +449,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDD3395246246150048E424 /* Build configuration list for PBXNativeTarget "Diet ScienceUITests" */;
 			buildPhases = (
+				0562AF09E2279AD6BE6D0C47 /* [CP] Check Pods Manifest.lock */,
 				5BDD3351246246130048E424 /* Sources */,
 				5BDD3352246246130048E424 /* Frameworks */,
 				5BDD3353246246130048E424 /* Resources */,
+				BEC474674C567B27209FEFEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -423,6 +469,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDD338B246246150048E424 /* Build configuration list for PBXNativeTarget "Diet Science WatchKit App" */;
 			buildPhases = (
+				66AC8780E2399B0F88A14740 /* [CP] Check Pods Manifest.lock */,
 				5BDD335C246246130048E424 /* Resources */,
 				5BDD338A246246150048E424 /* Embed App Extensions */,
 				AC5D9F08549524388531ECD8 /* Frameworks */,
@@ -441,10 +488,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDD3387246246150048E424 /* Build configuration list for PBXNativeTarget "Diet Science WatchKit Extension" */;
 			buildPhases = (
+				6333A3B4705BF6AD3D06797F /* [CP] Check Pods Manifest.lock */,
 				5BCD238D247343760008EBE8 /* Generate Apollo GraphQL API */,
 				5BDD3369246246140048E424 /* Sources */,
 				5BDD336A246246140048E424 /* Frameworks */,
 				5BDD336B246246140048E424 /* Resources */,
+				3A0B7FC7ED00EC7AB6D21317 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -452,8 +501,6 @@
 			);
 			name = "Diet Science WatchKit Extension";
 			packageProductDependencies = (
-				5BEC6CA9246DCF6500B57BEB /* Promises */,
-				5BCD238B247343270008EBE8 /* Apollo */,
 			);
 			productName = "Diet Science WatchKit Extension";
 			productReference = 5BDD336D246246140048E424 /* Diet Science WatchKit Extension.appex */;
@@ -498,8 +545,6 @@
 			);
 			mainGroup = 5BDD332B2462460F0048E424;
 			packageReferences = (
-				5BEC6CA5246DCECB00B57BEB /* XCRemoteSwiftPackageReference "promises" */,
-				5BCD2387247343180008EBE8 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = 5BDD33352462460F0048E424 /* Products */;
 			projectDirPath = "";
@@ -553,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDD3382246246150048E424 /* Preview Assets.xcassets in Resources */,
+				5BA6FBFD247881E800BAAD82 /* Auth0.plist in Resources */,
 				5BDD337F246246150048E424 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +606,67 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0562AF09E2279AD6BE6D0C47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diet Science-Diet ScienceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A0B7FC7ED00EC7AB6D21317 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diet Science WatchKit Extension/Pods-Diet Science WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diet Science WatchKit Extension/Pods-Diet Science WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diet Science WatchKit Extension/Pods-Diet Science WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B5C5316BF6AD786D533BB82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diet Science-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5BCD238D247343760008EBE8 /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -577,6 +684,106 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\ndate > current_date\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift --passthroughCustomScalars\n\n# Added in passing through custom scalars to handle Date types\n# As recommended here:\n# https://github.com/apollographql/apollo-ios/issues/262\n";
+		};
+		6333A3B4705BF6AD3D06797F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diet Science WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66AC8780E2399B0F88A14740 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diet Science WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE634BE6191C266269300847 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diet Science/Pods-Diet Science-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diet Science/Pods-Diet Science-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diet Science/Pods-Diet Science-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEC474674C567B27209FEFEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diet Science-Diet ScienceUITests/Pods-Diet Science-Diet ScienceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diet Science-Diet ScienceUITests/Pods-Diet Science-Diet ScienceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diet Science-Diet ScienceUITests/Pods-Diet Science-Diet ScienceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF420FC2C9C76C0F1A715ED7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diet ScienceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -694,7 +901,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				API_BASE_URL = "http://localhost:4000/dev/graphql";
+				API_BASE_URL = "http://localhost:3000/dev/graphql";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -725,7 +932,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CUSTOM_APP_ICON = AppIconDebug;
-				CUSTOM_BUNDLE_ID = "com.fryanpan.Diet-Science-Debug";
+				CUSTOM_BUNDLE_ID = "com.fryanpan.diet-science-app";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -789,7 +996,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CUSTOM_APP_ICON = AppIcon;
-				CUSTOM_BUNDLE_ID = "com.fryanpan.Diet-Science";
+				CUSTOM_BUNDLE_ID = "com.fryanpan.diet-science-app";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -813,6 +1020,7 @@
 		};
 		5BDD3388246246150048E424 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F1236EC3319D2BD649B4BC /* Pods-Diet Science WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
@@ -839,6 +1047,7 @@
 		};
 		5BDD3389246246150048E424 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83360FA1027F363BD215CE66 /* Pods-Diet Science WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
@@ -865,15 +1074,18 @@
 		};
 		5BDD338C246246150048E424 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 291AAE7EB070BE1A07CF0E5C /* Pods-Diet Science WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${CUSTOM_APP_ICON}";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NEY29E9XHD;
 				IBSC_MODULE = Diet_Science_WatchKit_Extension;
 				INFOPLIST_FILE = "Diet Science WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(CUSTOM_BUNDLE_ID).watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Diet Science WatchKit App Provisioning Profile";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -884,17 +1096,18 @@
 		};
 		5BDD338D246246150048E424 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABBA6189569201285A0B5452 /* Pods-Diet Science WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${CUSTOM_APP_ICON}";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NEY29E9XHD;
 				IBSC_MODULE = Diet_Science_WatchKit_Extension;
 				INFOPLIST_FILE = "Diet Science WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(CUSTOM_BUNDLE_ID).watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Diet Science WatchKit App Provisioning Profile";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -905,10 +1118,12 @@
 		};
 		5BDD3390246246150048E424 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6598CEE4975579A3F440F2 /* Pods-Diet Science.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${CUSTOM_APP_ICON}";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Diet Science/Preview Content\"";
 				DEVELOPMENT_TEAM = NEY29E9XHD;
 				ENABLE_PREVIEWS = YES;
@@ -919,6 +1134,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(CUSTOM_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Diet Science Provisioning Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -926,10 +1142,12 @@
 		};
 		5BDD3391246246150048E424 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0C0096AFCDDE1BBB5E56F78 /* Pods-Diet Science.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${CUSTOM_APP_ICON}";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Diet Science/Preview Content\"";
 				DEVELOPMENT_TEAM = NEY29E9XHD;
 				ENABLE_PREVIEWS = YES;
@@ -940,6 +1158,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(CUSTOM_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Diet Science Provisioning Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -947,6 +1166,7 @@
 		};
 		5BDD3393246246150048E424 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE89325D71D99083C3BA4B70 /* Pods-Diet ScienceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -969,6 +1189,7 @@
 		};
 		5BDD3394246246150048E424 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8E9F1F6FE8A0122A43634E /* Pods-Diet ScienceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -991,6 +1212,7 @@
 		};
 		5BDD3396246246150048E424 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A7102538C75DEEBCE4A805 /* Pods-Diet Science-Diet ScienceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1011,6 +1233,7 @@
 		};
 		5BDD3397246246150048E424 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091D1421AD26051FA0A1CA49 /* Pods-Diet Science-Diet ScienceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1087,48 +1310,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		5BCD2387247343180008EBE8 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.27.1;
-			};
-		};
-		5BEC6CA5246DCECB00B57BEB /* XCRemoteSwiftPackageReference "promises" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/promises.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.8;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5BCD2388247343180008EBE8 /* Apollo */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5BCD2387247343180008EBE8 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = Apollo;
-		};
-		5BCD238B247343270008EBE8 /* Apollo */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5BCD2387247343180008EBE8 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = Apollo;
-		};
-		5BEC6CA6246DCECB00B57BEB /* Promises */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5BEC6CA5246DCECB00B57BEB /* XCRemoteSwiftPackageReference "promises" */;
-			productName = Promises;
-		};
-		5BEC6CA9246DCF6500B57BEB /* Promises */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5BEC6CA5246DCECB00B57BEB /* XCRemoteSwiftPackageReference "promises" */;
-			productName = Promises;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5BDD332C2462460F0048E424 /* Project object */;
 }

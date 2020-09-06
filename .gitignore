@@ -8,4 +8,5 @@ ios/Diet Science.xcworkspace/xcshareddata/swiftpm/
 server/dist/*
 server/.serverless
 server/src/config/sequelize-config.js
-
+server/src/config/auth0-secrets.json
+server/src/config/auth0-public-key
