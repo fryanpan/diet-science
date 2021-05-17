@@ -80,6 +80,7 @@ class GoogleSpreadsheetSampleStore: EventSampleStore {
         "nasal_congestion": "Nasal congestion",
         "headache": "Headache",
         "rash": "Rash",
+        "ear_congestion": "Ear Congestion",
         
         "urination_pain_start": "Urination Pain at Start",
         "urination_pain_during": "Urination Pain During",
