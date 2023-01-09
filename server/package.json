@@ -20,7 +20,7 @@
     "pg-hstore": "^2.3.3",
     "reflect-metadata": "^0.1.13",
     "serverless": "^1.71.3",
-    "serverless-offline": "^6.1.7",
+    "serverless-offline": "^12.0.4",
     "sequelize": "^5.21.9",
     "sequelize-cli": "^5.5.1",
     "sequelize-typescript": "^1.1.0"
